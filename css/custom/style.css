@@ -1,0 +1,968 @@
+/*========================================== MASTER STYLESHEET ===========================================================
+
+	Project : RAACK SITE TEMPLATE 
+	Version : 1.0 
+	Primary Use : RAACK SITE TEMPLATE
+	
+ ==========================================================================================================================*/
+
+/*========================================== LAYOUT ===================================================================
+ 
+	1.GLOBAL CSS 
+	2.COMMON CSS 
+	3.BUTTON 
+	4.NAVIGATION 
+	5.HEADER 
+	6.COUNTER 
+	7.HOME ACADEMY
+	8.HOME VIDEO
+	9.PHILOSOPHY
+	10.CLIENT
+	11.CTA
+	12.TESTIMONIAL
+	13.FORM
+	14.MEDIA QUERIES
+	
+	
+ ======================================================================================================================*/
+
+/*========================================== COLOR CODES ===============================================================
+
+	Primary Background:#ffffff [White] 
+	Secondary Background:#f5f5f5 [Gray] 
+	Theme Color :#EC1D25 [Red] 
+	Content Color :#424242 [Black] 
+	Button bg Color :#EC1D25 [Red]
+ 
+ ================================================================================================================*/
+
+/*========================================== TYPOGRAPHY =====================================================
+
+	Heading:font-family: 'Lato', sans-serif;
+	Body :font-family: 'Lato', sans-serif;
+	
+ ====================================================================================================================*/
+
+/*========================================== 1.GLOBAL CSS START ===========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+ body {
+	background: #ffffff;
+	color: #424242;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0 auto;
+	max-width: 1500px;
+}
+p {
+	margin-bottom: 0px;
+	color: #424242;
+}
+h1 {
+	color: #FFF;
+	font-family: 'Lato';
+	font-size: 58px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 111.182%; /* 86.722px */
+	letter-spacing: 1px;
+}
+h2 {
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	font-size: 50px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	line-height: 60px;
+}
+h3 {
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	font-size: 42px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	line-height: 52px;
+}
+h4 {
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	font-size: 35px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	line-height: 45px;
+}
+h5 {
+	font-family: 'Lato';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 30px; /* 37.802px */
+	letter-spacing: 1px;
+	text-transform: uppercase;;
+}
+h6 {
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 28px;
+}
+/* SAFARI CLASS */
+
+.rowsafari {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+a {
+	color: #424242;
+	text-decoration: none;
+}
+a:hover {
+	color: #EC1D25;
+	text-decoration: none !important;
+	outline: none !important;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	color: #424242;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0px;
+}
+.animate-scroll{
+	opacity: 0;
+}
+/*========================== 1.GLOBAL CSS END =====================*/
+
+/*========================= 2.COMMON CSS START =============================*/
+
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.section-space {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.section-margin-bottom {
+	margin-bottom: 15px;
+}
+.img-margin-bottom {
+	margin-bottom: 25px;
+}
+.section-padding-bottom {
+	padding-bottom: 30px;
+}
+.section-white-bg {
+	background-color: #ffffff;
+}
+.section-gray-bg {
+	background-color: #f5f5f5;
+}
+.section-dark-bg {
+	background-color: #333333;
+}
+.intro-content {
+	color: #424242;
+	font-family: 'Lato';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px; /* 40.815px */
+	letter-spacing:1.5px;
+}
+.section-heading {
+	padding-bottom: 50px;
+}
+.letter-spacing {
+	letter-spacing: 1px;
+}
+.theme-color {
+	color: #EC1D25;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+  }
+/*======================== 2.COMMON CSS END ================================*/
+
+/*========================== 3.BUTTON START ============================*/
+
+.primary-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 10px 20px;
+	transition: all 0.3s ease-in;
+	letter-spacing: 1px;
+	border: 2px solid #EC1D25;
+	background-color: #EC1D25;
+	cursor: pointer;
+	font-family: 'Lato';
+	fill: #ffffff;
+	border-radius: 66px;
+	min-width: 250px;
+	text-transform: uppercase;
+}
+.primary-btn:hover {
+	background-color: transparent;
+	color: #333333;
+	fill: #333333;
+	border: 2px solid #EC1D25;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+}
+
+.transparent-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 10px 20px;
+	transition: all 0.3s ease-in;
+	letter-spacing: 1px;
+	border: 2px solid #ffffff;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'Lato';
+	border-radius: 66px;
+	min-width: 250px;
+	fill: #ffffff;
+	text-transform: uppercase;
+}
+.transparent-btn:hover {
+	background-color: #EC1D25;
+	color: #ffffff;
+	fill: #ffffff;
+	border: 2px solid #EC1D25;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+}
+.primary-btn svg,
+.transparent-btn svg {
+	margin-left: 15px;
+}
+/*============================== 3.BUTTON END ==============================*/
+
+/*========================= 4.NAVIGATION START ===================================*/
+
+.nav-style {
+	color: #000;
+	font-family: Lato;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.navbar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo-style {
+	padding: 20px 30px;
+}
+.navbar-toggler {
+	float: right;
+	display: table;
+	margin-left: auto;
+}
+button:focus:not(:focus-visible) {
+	box-shadow: none !important;
+}
+.navbar-toggler > .close {
+	width: 30px;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+}
+.navbar-toggler > .close {
+    display:flex;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+/*================================================= 4.NAVIGATION END =============================================*/
+
+/*================================================= 5.HEADER START =================================================*/
+
+.slider-header .owl-demo .owl-controls,
+.slider-header .owl-demo .owl-dots {
+	margin-top: 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+.slider-header#owl-demo .item {
+	margin: 0;
+}
+.slider-header#owl-demo .owl-pagination {
+	display: none;
+	padding-top: 0px;
+}
+.owl-carousel {
+	position: relative;
+	height: 100%;
+}
+.slider-padding {
+	padding-bottom: 210px;
+	padding-top: 210px;
+}
+.slider-image1 {
+	border-radius: 66px;
+	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
+}
+.slider-image2 {
+	border-radius: 66px;
+	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
+}
+.slider-image3 {
+	border-radius: 66px;
+	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
+}
+.slider-header .header-content {
+	letter-spacing: 1px;
+}
+
+.bgimage-property {
+height: 520px;
+}
+.header-testimonial h1 span {
+	color: #FFF;
+	font-weight: 800;
+	letter-spacing: 0.39px;
+}
+/*======================================== 5.HEADER END ==============================*/
+
+/*=============================== 6.COUNTER AREA START ============================*/
+
+.count-num {
+	font-size: 60px;
+	font-family: "Lato";
+	line-height: 70px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	color: #000000;
+}
+.counter-box p {
+	color: #EC1D25;
+	font-family: Lato;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 60px;
+	letter-spacing: 0.4px;
+}
+
+.title-counterup {
+	margin-top: 10px;
+	color: #000000;
+}
+.count-text {
+	color: #000;
+	font-family: Lato;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 38px;
+	letter-spacing: 0.215px;
+}
+/*============================== 6.COUNTER AREA END ===========================*/
+
+/*=============================== 7.HOME ACADEMY AREA START ============================*/
+.academy-are {
+	color: #000;
+	font-weight: 400;
+}
+.academy-raack {
+	color: #EC1D25;
+	font-weight: 800;
+}
+.studios-ul-img {
+	text-align: right;
+	margin-top: -30px;
+	padding-left: 95px;
+}
+/*============================== 7.HOME ACADEMY AREA END ===========================*/
+
+/*=============================== 8.HOME VIDEO AREA START ============================*/
+.home-video-bg {
+	background: url("../../images/home-video-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 340px 0;
+	width: 100%; 
+}
+.wrapper {
+	position: relative;
+} 
+.wrapper .circle {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	background-color: #EC1D25;
+	margin: auto;
+	transform: scale(1, 1);
+}
+.wrapper .circle.pulse {
+-webkit-animation-timing-function: ease;
+		animation-timing-function: ease;
+-webkit-animation: pulse 2s infinite;
+		animation: pulse 2s infinite;
+background-color: #f77478;
+}
+.wrapper svg {
+fill: #ffffff;
+stroke: #ffffff;
+stroke-linejoin: round;
+stroke-width: 5;
+transition: all 0.3s;
+}
+.wrapper svg:hover {
+cursor: pointer;
+fill: #ffffff;
+stroke: #ffffff;
+transform: scale(1.2, 1.2);
+}
+
+@-webkit-keyframes pulse {
+0% {
+	transform: scale(1, 1);
+}
+25% {
+	transform: scale(1, 1);
+}
+50% {
+	transform: scale(1.2, 1.2);
+}
+100% {
+	transform: scale(1, 1);
+}
+}
+
+@keyframes pulse {
+0% {
+	transform: scale(1, 1);
+}
+25% {
+	transform: scale(1, 1);
+}
+50% {
+	transform: scale(1.2, 1.2);
+}
+100% {
+	transform: scale(1, 1);
+}
+}
+.video-ul-img {
+	margin-top: -20px;
+  	margin-left: 20px;
+}
+/*============================== 8.HOME VIDEO AREA END ===========================*/
+
+/*=============================== 9.PHILOSOPHY AREA START ============================*/
+.sandal-bg {
+	border-radius: 66px;
+	background: linear-gradient(105deg, #FFF3BE 2.21%, #FFD29D 98.28%);
+}
+.content-philosophy {
+	padding: 30px;
+}
+.philo-disc {
+	color: #000;
+	font-style: italic;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	letter-spacing: 0.504px;
+}
+/*============================== 9.PHILOSOPHY AREA END ===========================*/
+
+/*============================== 10.CLIENT AREA START ===========================*/
+.client-circle-img  {
+	width: 250px;
+	height: 250px;
+}
+.client-div {
+	border-right: 2px solid #ccc;
+	padding-right: 20px;
+	border-bottom: 2px solid #ccc;
+}
+.client-div:nth-child(3),
+.client-div:nth-child(6) {
+	border-right: 0;
+}
+
+.client-div:nth-child(4),
+.client-div:nth-child(5),
+.client-div:nth-child(6) {
+	border-bottom: 0;
+}
+.client-logo-border {
+	border-top: 2px solid #EC1D25;
+  border-bottom: 3px solid #EC1D25;
+}
+/*============================== 10.CLIENT AREA END ===========================*/
+
+/*============================== 11.CTA AREA START ===========================*/
+.cta-bg-img {	
+	background: url("../../images/cta-bg-img.png"), lightgray -5.781px -159.958px / 103.028% 180.07% no-repeat;
+	border-radius: 66px;
+	box-shadow: 0px 4px 10px 250px rgba(0, 0, 0, 0.50) inset;
+}
+/*============================== 11.CTA AREA END ===========================*/
+
+/*============================== 12.TESTIMONIAL AREA START ===========================*/
+.testi-title {
+	color: #000;
+	text-align: center;
+	font-family: 'Grand Hotel';
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50px; /* 77.827px */
+	letter-spacing: 0.35px;
+}
+.quote {
+	margin-bottom: 10px;
+}
+.quote svg {
+	fill: #EC1D25;
+	width: 70px;
+	height: 70px;
+}
+.section-head-space {
+	margin-bottom: 30px;
+}
+.testimonial .owl-buttons {
+	fill: #333 !important;
+}
+.testimonial .owl-next {
+	position: absolute;
+  right: -100px;
+}
+.testimonial .owl-prev {
+	width: 100%;
+  text-align: left;
+  position: absolute;
+  left: -100px;
+}
+.testimonial-card {
+	background-color: #fff;
+ 	border-radius: 66px;
+	margin: 0 20px; 
+box-shadow: 0px 8px 28px 0px #F0F0F0;
+}
+/*============================== 12.TESTIMONIAL AREA END ===========================*/
+
+/*============================== 13.FORM AREA START ===========================*/
+form input {
+	border: 0;
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  padding: 10px 20px 5px 20px;
+}
+form .form-field {
+	margin-bottom: 15px;
+}
+/*============================== 13.FORM AREA END ===========================*/
+
+/*===================== 14.MEDIA QUERIES START =====================*/
+ 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.res-tab-margin-bottom {
+		margin-bottom: 30px;
+	} 
+}
+@media only screen and (max-width: 575px) {
+	h1 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	h3 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h5 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	h6 {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.res-row-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.res-text-center  {
+		text-align: center;
+	}
+	.wrapper .circle,
+	.wrapper .circle img {
+		width: 40px;
+		height: 40px;
+	}
+	.home-video-bg {
+		background-size: contain;
+  		padding: 140px 0;
+	}
+	.section-padding-bottom {
+		padding-bottom: 20px;
+	}
+	.phylosophy-ul-img {
+		width: 80px;
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}	
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	h2 {
+		font-size: 37px;
+		line-height: 47px;
+	}
+	
+	h3 {
+		font-size: 33px;
+		line-height: 43px;
+	}
+	h4 {
+		font-size: 28px;
+		line-height: 38px;
+	}
+	h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h6 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	h1 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+	h2 {
+		font-size: 35px;
+		line-height: 45px;
+	}
+	h3 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	h4 {
+		font-size: 28px;
+		line-height: 38px;
+	}
+	h5 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+	h6 {
+		font-size: 17px;
+		line-height: 27px;
+	}
+	.section-margin-bottom {
+		margin-bottom: 12px;
+	}
+	.img-margin-bottom {
+		margin-bottom: 23px;
+	} 
+	.section-space {
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+	.sandal-bg .align-items-center {
+		align-items: end !important;
+	  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	h1 {
+		font-size: 48px;
+		line-height: 58px;
+	}
+	h2 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+	h3 {
+		font-size: 38px;
+		line-height: 48px;
+	}
+	h4 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	h5 {
+		font-size: 23px;
+		line-height: 33px;
+	}
+	h6 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.fixed-top .nav-btn {
+		padding: 27px 58px
+	}
+	
+	.testimonial .owl-prev {
+		left: -50px;
+	}
+	.testimonial .owl-next {
+		right: -50px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	
+	.section-margin-bottom {
+		margin-bottom: 10px;
+	}
+	.intro-content {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.img-margin-bottom {
+		margin-bottom: 10px;
+	}
+	.section-heading {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.section-space {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	body {
+		font-size: 14px;
+	}
+	
+	.res-margin-bottom {
+		margin-bottom: 30px;
+	}
+	
+	.video-ul-img {
+		margin-top: 0;
+		margin-left: 0;
+		display: table;
+		margin: 0 auto;
+	}
+	.auther-com {
+		text-align: right;
+	}
+	.client-div {
+		border:0;
+	}
+	.test-content {
+		padding: 30px 20px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.guest-form input {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.nav-style {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.margin-auto {
+		margin: 0 auto;
+	}
+	.navbar-collapse {
+		position: absolute;
+		top: 110px;
+		padding: 20px;
+		background-color: #EC1D25;
+		left: 0;
+		right: 0;
+		z-index: 9;
+	}
+	.navbar-collapse .nav-style {
+		color: #ffffff;
+	}
+	.nav-style {
+		padding: 10px 0px !important;
+	}
+	.navbar-expand-lg > .container,
+	.navbar-expand-lg > .container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	
+	.res-bot10 {
+		margin-bottom: 20px;
+	}
+	.res-bot20 {
+		margin-bottom: 20px;
+	}
+	
+	.res-width-padding-bottom {
+		padding-bottom: 30px;
+	}
+	.philo-auther {
+		border-bottom-left-radius: 66px;
+	}
+	.res-left-mar0 {
+		margin-left: 0;
+	}
+	.res-display-none {
+		display: none;
+	}
+	.studios-ul-img {
+		padding-left: 15px;
+		margin-top: -10px;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.testimonial .owl-prev {
+		left: 0;
+	}
+	.testimonial .owl-next {
+		right: 0;
+	}
+	.com-ul-img.float-right {
+		margin-bottom: 10px;
+		margin-top: 30px;
+		float: left;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.res-mob-padding {
+		padding-bottom: 30px;
+	}
+	.res-row-margin-bottom {
+		margin-bottom: 30px;
+	}
+	.nav-btn-icon::before {
+		display: inline-block;
+		padding: 7px 12px;
+		margin-right: 15px;
+		border-radius: 5px;
+	}
+	.nav-btn {
+		display: none;
+	}
+	.navbar-toggler {
+		padding: 4px 8px;
+	}
+	.gr {
+		top: 9px;
+	}
+	.nav-btn-top {
+		position: absolute;
+		top: 13px;
+		left: 50px;
+		right: 0;
+		margin-right: 14px;
+		margin: 0 auto;
+	}
+	.logo-style img {
+		width: 70%;
+	}
+	.logo-style img {
+		max-width: 40%;
+	}
+	.navbar-toggler-icon {
+		width: 1.2em;
+		height: 1.2em;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+	.nav-btn {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		margin-right: 15px;
+		display: initial;
+	} 
+	.nav-btn-top {
+		position: absolute;
+		top: 19px;
+		left: 0;
+		right: 0;
+		margin-right: 14px;
+		margin: 0 auto;
+	}
+	.logo-style img {
+		max-width: 60%;
+	}
+	.fixed-top .logo-style {
+		width: auto;
+	}
+	.fixed-top .nav-btn {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		margin-right: 15px;
+		display: initial;
+	}
+}
+/* SAFARI MENU ISSUES*/
+
+@media only screen and (min-width: 992px) {
+	/*safari Browser*/
+	.navbar-expand-lg .navbar-collapse {
+		float: right !important;
+		display: block !important;
+		line-height: 24px !important;
+	}
+	.navbar-expand-lg .safari-menu {
+		display: inline-block !important;
+		vertical-align: middle !important;
+	}
+}
+/*=================================== 34.MEDIA QUERIES END =======================================*/
+ 
