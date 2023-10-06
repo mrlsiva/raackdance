@@ -47,21 +47,60 @@
 
 /*========================================== TYPOGRAPHY =====================================================
 
-	Heading:font-family: 'Lato', sans-serif;
-	Body :font-family: 'Lato', sans-serif;
+	Heading:font-family: 'Montserrat', sans-serif;
+	Body :font-family: 'Montserrat', sans-serif;
 	
  ====================================================================================================================*/
 
 /*========================================== 1.GLOBAL CSS START ===========================================*/
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
 	background: #ffffff;
 	color: #424242;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 26px;
 	margin: 0 auto;
 	max-width: 1500px;
@@ -74,47 +113,46 @@ p {
 
 h1 {
 	color: #FFF;
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 	font-size: 58px;
 	font-style: normal;
-	font-weight: 500;
-	line-height: 111.182%;
-	/* 86.722px */
+	font-weight: 700;
+	line-height: 111.182%; 
 	letter-spacing: 1px;
 }
 
 h2 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 	font-size: 50px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 60px;
 }
 
 h3 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 	font-size: 42px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 52px;
 }
 
 h4 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 	font-size: 35px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 45px;
 }
 
 h5 {
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 	font-size: 20px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 30px;
 	/* 37.802px */
 	letter-spacing: 1px;
@@ -122,7 +160,7 @@ h5 {
 }
 
 h6 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #424242;
 	font-size: 18px;
 	font-weight: 700;
@@ -176,6 +214,16 @@ h6 {
 	opacity: 0;
 }
 
+iframe {
+  border: none;
+  width: 100%;
+  height: 100vh;
+}
+
+iframe.location-map{
+	border-radius: 66px;
+}
+
 /*========================== 1.GLOBAL CSS END =====================*/
 
 /*========================= 2.COMMON CSS START =============================*/
@@ -219,10 +267,10 @@ h6 {
 
 .intro-content {
 	color: #424242;
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 	font-size: 18px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 28px;
 	/* 40.815px */
 	letter-spacing: 1.5px;
@@ -265,31 +313,30 @@ h6 {
 /*========================== 3.BUTTON START ============================*/
 
 .primary-btn {
-	display: inline-block;
-	text-align: center;
-	font-size: 16px;
-	font-weight: 700;
-	color: #ffffff;
-	padding: 10px 20px;
-	transition: all 0.3s ease-in;
-	letter-spacing: 1px;
-	border: 2px solid #EC1D25;
-	background-color: #EC1D25;
-	cursor: pointer;
-	font-family: 'Lato';
-	fill: #ffffff;
-	border-radius: 66px;
-	min-width: 250px;
-	text-transform: uppercase;
+	background: linear-gradient(265.24deg,#f61f62 -6.5%,#fc1111 53.28%,#b100ef 102.57%),#d3104d;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    box-shadow: 0 20px 68px rgba(230,0,72,.23);
+	border-radius: 8px;
+    color: #fff;
+	fill: #fff;
+    display: inline-block;
+    font-size: 16px;
+	line-height: 26px;
+    font-weight: 700; 
+    padding: 15px 18px;
+    position: relative;
+    text-decoration: none;
+    transition: all .7s ease;
+    z-index: 1;
+	border: 0;
 }
 
 .primary-btn:hover {
-	background-color: transparent;
-	color: #333333;
-	fill: #333333;
-	border: 2px solid #EC1D25;
-	transition: all 0.3s ease-in;
-	-webkit-transition: all 0.3s ease-in;
+	background-position: 100% 0;
+    background-size: 300% 100%;
+    box-shadow: none;
+	color: #fff;
 }
 
 .transparent-btn {
@@ -304,7 +351,7 @@ h6 {
 	border: 2px solid #ffffff;
 	background-color: transparent;
 	cursor: pointer;
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 	border-radius: 66px;
 	min-width: 250px;
 	fill: #ffffff;
@@ -332,7 +379,7 @@ h6 {
 	border: 2px solid #424242;
 	background-color: transparent;
 	cursor: pointer;
-	font-family: 'Lato';
+	font-family: 'Montserrat';
 	border-radius: 66px;
 	min-width: 250px;
 	fill: #424242;
@@ -351,7 +398,8 @@ h6 {
 .transparent2-btn svg,
 .primary-btn svg,
 .transparent-btn svg {
-	margin-left: 15px;
+	margin-left: 10px;
+	margin-top: -2px;
 }
 
 .hover-text-white:hover,
@@ -366,14 +414,14 @@ h6 {
 
 .nav-style {
 	color: #000;
-	font-family: Lato;
+	font-family: "Montserrat";
 	font-size: 18px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 600;
 	line-height: normal;
 	padding-left: 20px !important;
 	padding-right: 20px !important; 
-  transition: all .5s ease;
+	transition: all .5s ease;
 }
 .navbar-nav li {
 	padding: 30px 0;
@@ -458,7 +506,6 @@ button:focus:not(:focus-visible) {
 .slider-image1 {
 	border-radius: 66px;
 	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
-	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -466,7 +513,6 @@ button:focus:not(:focus-visible) {
 .slider-image2 {
 	border-radius: 66px;
 	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
-	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -474,7 +520,6 @@ button:focus:not(:focus-visible) {
 .slider-image3 {
 	border-radius: 66px;
 	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
-	box-shadow: 0px 0px 4px 416px rgba(0, 0, 0, 0.37) inset;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -487,47 +532,56 @@ button:focus:not(:focus-visible) {
 	height: 520px;
 }
 
-.header-testimonial h1 span {
+.stroke-text,
+.header-testimonial h1 strong {
 	color: #FFF;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 0.39px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #fff;
 }
 
 /*======================================== 5.HEADER END ==============================*/
 
 /*=============================== 6.COUNTER AREA START ============================*/
-
+.counter-box {
+	background: #EC1D25;
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 8px;
+}
 .count-num {
-	font-size: 60px;
-	font-family: "Lato";
-	line-height: 70px;
-	font-weight: 800;
+	font-size: 50px;
+	font-family: "Montserrat";
+	line-height: 60px;
+	font-weight: 600;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
-	color: #000000;
+	color: #ffffff;
 }
 
 .counter-box p {
-	color: #EC1D25;
-	font-family: Lato;
+	color: #ffffff;
+	font-family: "Montserrat";
 	font-size: 50px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 60px;
 	letter-spacing: 0.4px;
 }
 
 .title-counterup {
 	margin-top: 10px;
-	color: #000000;
+	color: #ffffff;
 }
 
 .count-text {
 	color: #000;
-	font-family: Lato;
+	font-family: "Montserrat";
 	font-size: 28px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 38px;
 	letter-spacing: 0.215px;
 }
@@ -542,7 +596,7 @@ button:focus:not(:focus-visible) {
 
 .academy-raack {
 	color: #EC1D25;
-	font-weight: 800;
+	font-weight: 700;
 }
 
 .studios-ul-img {
@@ -551,44 +605,97 @@ button:focus:not(:focus-visible) {
 	padding-left: 95px;
 }
 
+/*Vertical Sliding*/
+.wordtype-home .slidingVertical  {
+	position: relative; 
+  }
+  .wordtype-home .slidingVertical span{
+	display: inline;
+	text-indent: 8px;
+  }
+  .wordtype-home .slidingVertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	-ms-animation: topToBottom 12.5s linear infinite 0s;
+	-webkit-animation: topToBottom 12.5s linear infinite 0s; 
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+  }
+  .wordtype-home .slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+  }
+  .wordtype-home .slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+  }
+  .wordtype-home .slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+  }
+  .wordtype-home .slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+  }
+  
+  /*topToBottom Animation*/
+  @-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+  }
+  @-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+  }
+  @-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+  }
+  
 /*============================== 7.HOME ACADEMY AREA END ===========================*/
 
 /*=============================== 8.HOME VIDEO AREA START ============================*/
 .home-video-bg {
-	background: url("../../images/home-video-bg.png");
+	background-image: url("../../images/home-video-bg.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	padding: 340px 0;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .wrapper {
 	position: relative;
 }
 
-.wrapper .circle {
-	width: 80px;
-	height: 80px;
+.wrapper .circle { 
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border-radius: 50%;
-	background-color: #EC1D25;
 	margin: auto;
-	transform: scale(1, 1);
-}
-
-.wrapper .circle.pulse {
-	-webkit-animation-timing-function: ease;
-	animation-timing-function: ease;
-	-webkit-animation: pulse 2s infinite;
-	animation: pulse 2s infinite;
-	background-color: #f77478;
+	display: table;
+	transform: translateY(-50%);
 }
 
 .wrapper svg {
@@ -599,48 +706,6 @@ button:focus:not(:focus-visible) {
 	transition: all 0.3s;
 }
 
-.wrapper svg:hover {
-	cursor: pointer;
-	fill: #ffffff;
-	stroke: #ffffff;
-	transform: scale(1.2, 1.2);
-}
-
-@-webkit-keyframes pulse {
-	0% {
-		transform: scale(1, 1);
-	}
-
-	25% {
-		transform: scale(1, 1);
-	}
-
-	50% {
-		transform: scale(1.2, 1.2);
-	}
-
-	100% {
-		transform: scale(1, 1);
-	}
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(1, 1);
-	}
-
-	25% {
-		transform: scale(1, 1);
-	}
-
-	50% {
-		transform: scale(1.2, 1.2);
-	}
-
-	100% {
-		transform: scale(1, 1);
-	}
-}
 
 .video-ul-img {
 	margin-top: -20px;
@@ -671,31 +736,97 @@ button:focus:not(:focus-visible) {
 /*============================== 9.PHILOSOPHY AREA END ===========================*/
 
 /*============================== 10.CLIENT AREA START ===========================*/
+.home-logo-alider {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.home-logo-alider .feature-circle-img {
+	position: relative;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    opacity: 1;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.home-logo-alider:hover .feature-circle-img {
+    -webkit-transition: opacity .5s cubic-bezier(0,.99,.06,.95),-webkit-transform .3s cubic-bezier(0,.84,.58,1);
+    transition: opacity .5s cubic-bezier(0,.99,.06,.95),transform .3s cubic-bezier(0,.84,.58,1);
+    opacity: 0;
+    -webkit-transform: translateX(-5%);
+    -moz-transform: translateX(-5%);
+    transform: translateX(-5%);
+}
+.home-logo-alider .feature-circle-hover-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    opacity: 0;
+    z-index: 100;
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+    transform: translateX(-45%);
+    -webkit-transition: opacity .1s ease-out,-webkit-transform 0s .1s;
+    transition: opacity .1s ease-out,transform 0s .1s;
+}
+.home-logo-alider:hover .feature-circle-hover-image {
+    opacity: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .15s ease-out,-webkit-transform .4s cubic-bezier(.38,2,.57,1.2);
+    transition: opacity .15s ease-out,transform .4s cubic-bezier(.38,2,.57,1.2);
+}
 .client-circle-img {
 	width: 250px;
 	height: 250px;
 }
-
 .client-div {
+	padding: 0;
+}
+.client-div .logo-com:after {
 	border-right: 2px solid #ccc;
 	padding-right: 20px;
-	border-bottom: 2px solid #ccc;
+	content: "";
+	height: 150px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
 }
 
-.client-div:nth-child(3),
-.client-div:nth-child(6) {
+.client-div .logo-com:before { 
+content: "";
+	border-bottom: 2px solid #ccc;
+	width: 300px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  margin: 0 auto;
+}
+.logo-com {
+	position: relative;
+}
+.client-div:nth-child(3) .logo-com:after,
+.client-div:nth-child(6) .logo-com:after {
 	border-right: 0;
 }
 
-.client-div:nth-child(4),
-.client-div:nth-child(5),
-.client-div:nth-child(6) {
+.client-div:nth-child(4) .logo-com:before,
+.client-div:nth-child(5) .logo-com:before,
+.client-div:nth-child(6) .logo-com:before {
 	border-bottom: 0;
 }
 
 .client-logo-border {
-	border-top: 2px solid #EC1D25;
-	border-bottom: 3px solid #EC1D25;
+	background-color: #EC1D25;
 }
 
 /*============================== 10.CLIENT AREA END ===========================*/
@@ -712,6 +843,39 @@ button:focus:not(:focus-visible) {
 /*============================== 11.CTA AREA END ===========================*/
 
 /*============================== 12.TESTIMONIAL AREA START ===========================*/
+#team-slider .item {
+	margin: 0 20px;
+}
+#team-slider .owl-prev svg,
+#team-slider .owl-next svg {
+	fill: #424242;
+}
+#team-slider .owl-next {
+	background-color: #ffffff;
+  display: table;
+  width: auto; 
+  position: absolute;
+  right: 0;
+  padding: 10px 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.06);
+}
+#team-slider .owl-prev {
+	background-color: #ffffff;
+  display: table;
+  width: auto; 
+  position: absolute;
+  left: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.06);
+  padding: 10px 15px;
+}
+.team-destination {
+	color: #6b7280;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+	margin-bottom: 5px;
+}
 .testi-title {
 	color: #000;
 	text-align: center;
@@ -828,7 +992,7 @@ input::placeholder {
 	color: #DADADA;
 	font-size: 180px;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 180px;
 	/* 200.127px */
 	letter-spacing: 0.9px;
@@ -981,7 +1145,7 @@ input::placeholder {
 
 .book-day-col {
 	font-size: 50px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 60px;
 }
 
@@ -1671,6 +1835,16 @@ div.mobile-wrapper {
 	}
 	.mobile-wrapper .feature-circle-img {
 		border-radius: 0 !important;
+	}
+		
+	.client-div .logo-com:after {
+		content: "";
+		border-right: 0;
+	}
+
+	.client-div .logo-com:before { 
+	content: "";
+		border-bottom: 0;
 	}
 }
 
