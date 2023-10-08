@@ -64,4 +64,16 @@ $(document).ready(function () {
 		}
 	});
 
+	//POPUP FORM 
+	$(".btn-hst-pop-modal").click(function() {        
+        $($(this).attr('href')).parent().show();
+        $($(this).attr('href')).show(500).css('display', 'inline-block');
+        return false;
+    });
+    $(".close-hst-pop-modal").click(function() {       
+        $($(this).parent('.hst-pop-modal')).parent().hide();
+        $($(this).parent('.hst-pop-modal')).hide(400);
+        return false;
+    });
+
 });

@@ -105,7 +105,7 @@
       </section>
       <!--================================= HEADER END ==========================================-->	
       <!--=============================== FACULTIES TRAINING AREA START =======================-->
-      <section class="section-space section-white-bg animate-scroll" data-animate="animate__animated animate__fadeInUp">
+      <section class="section-space section-white-bg fta-page">
          <div class="container">
             <div class="section-heading">
                <h3 class="section-margin-bottom"><span class="theme-color">Raack </span> Academy’s <br><span style="font-weight: 500;">Faculties Training Academy</span></h3>
@@ -115,13 +115,52 @@
                <div class="col-lg-5 col-sm-12 col-md-12 col-12 res-width-padding-bottom">
                   <div class="mt-lg-5">
                      <p>At Raack Dance Academy, we believe in empowering our staff and faculties to become exceptional coaches and mentors. Our Faculties Training Academy is designed to provide comprehensive training and development programs that equip our team members with the skills, knowledge, and expertise needed to guide and inspire our valued clients.</p>
-                     <button class="primary-btn" style="margin-top: 30px;">
+                     <a href="#hst-pop-modal_name" class="btn-hst-pop-modal primary-btn" style="margin-top: 40px; min-width: 150px; text-align: center; padding: 10px 20px;">
                         Apply Now
-                        <svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'>
-                           <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                           <path d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/>
-                        </svg>
-                     </button>
+                     </a>
+                     <div class="hst-pop-modal-wrapper">
+                        <div id="hst-pop-modal_name" class="hst-pop-modal modal">
+                              <div class="text-center">
+                                 <h4 class="section-margin-bottom text-white"> Apply<span class="academy-raack"> Today</span></h4>
+                                 <p class="section-margin-bottom res-bot10">To apply or inquire about career opportunities, please submit your resume and a cover letter detailing your qualifications, experience, and why you would be a great fit for our team. We can't wait to hear from you!</p>
+                              </div> 
+                           <form action="#" class="form-res" method="post" style="margin-top: 30px;">
+                              <div class="form-field">
+                                 <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                              </div>
+                              <div class="form-field">
+                                 <div class="form-textarea-top-spacing">
+                                    <input type="email" name="email" class="form-input" value="" placeholder="Email Address" required autocomplete="off">
+                                 </div>
+                              </div>
+                              <div class="form-field">
+                                 <div class="form-textarea-top-spacing">
+                                    <input type="text" name="phone" class="form-input" value="" placeholder="Mobile Number" required autocomplete="off" onkeypress="return isNumber(event)">
+                                 </div>
+                              </div>
+                              <div class="form-field">
+                                 <div class="form-textarea-top-spacing">
+                                    <select name="course" id="course">
+                                       <option value="course-insterested-in">Course Insterested In</option>
+                                       <option value="course-insterested-in">Course Insterested In</option>
+                                       <option value="course-insterested-in">Course Insterested In</option>
+                                       <option value="course-insterested-in">Course Insterested In</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="form-field">
+                                 <input type="text" name="lname" class="form-input" value="" placeholder="Location" required autocomplete="off">
+                              </div>
+                              <div class="btn-wrapper text-center" style="margin-top: 40px;">
+                                 <button class="primary-btn" type="submit">Submit</button>
+                              </div>
+                              <div class="messageDiv"> <span class="sucessMessage"> </span>  <span class="failMessage"> </span> 
+                              </div>
+                           </form>
+                     
+                        <a href="#close-modal" class="close-hst-pop-modal"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a>
+                        </div>
+                     </div>
                   </div>
                </div>
                <div class="col-lg-6 offset-1 col-sm-12 col-md-12 col-12 res-width-padding-bottom res-left-mar0">

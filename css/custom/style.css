@@ -324,12 +324,13 @@ iframe.location-map{
     font-size: 16px;
 	line-height: 26px;
     font-weight: 700; 
-    padding: 15px 18px;
+    padding: 10px 20px !important;
     position: relative;
     text-decoration: none;
     transition: all .7s ease;
     z-index: 1;
 	border: 0;
+	text-align: center;
 }
 
 .primary-btn:hover {
@@ -345,7 +346,7 @@ iframe.location-map{
 	font-size: 16px;
 	font-weight: 700;
 	color: #ffffff;
-	padding: 10px 20px;
+	padding: 10px 20px !important;
 	transition: all 0.3s ease-in;
 	letter-spacing: 1px;
 	border: 2px solid #ffffff;
@@ -356,6 +357,7 @@ iframe.location-map{
 	min-width: 250px;
 	fill: #ffffff;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .transparent-btn:hover {
@@ -373,7 +375,7 @@ iframe.location-map{
 	font-size: 16px;
 	font-weight: 700;
 	color: #424242;
-	padding: 10px 20px;
+	padding: 10px 20px !important;
 	transition: all 0.3s ease-in;
 	letter-spacing: 1px;
 	border: 2px solid #424242;
@@ -384,6 +386,7 @@ iframe.location-map{
 	min-width: 250px;
 	fill: #424242;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .transparent2-btn:hover {
@@ -1153,7 +1156,9 @@ input::placeholder {
 	display: inline;
 	vertical-align: top;
 }
-
+.fta-page .hst-pop-modal.modal {
+	height: 600px;
+}
 /*============================== 17.FACULTIES TRAINING ACADEMY PAGE AREA END ===========================*/
 
 /*============================== 18.EVENTS TICKET BOOKING PAGE AREA START ===========================*/
@@ -1216,7 +1221,7 @@ input::placeholder {
 	align-items: center;
 }
 
-.gallery-btns>button {
+.gallery-btns .primary-btn {
 	margin-right: 20px;
 }
 
@@ -1372,6 +1377,200 @@ div.mobile-wrapper {
 }
 
 /*============================== 22.SINGLE COURSES PAGE AREA END ===========================*/
+#event-gallery-slider .item {
+	margin: 0 10px;
+}
+#event-gallery-slider svg {
+	fill: #ffffff;
+	background-color: #d3104d;
+	padding: 5px 10px;
+  width: 30px;
+  height: 30px;
+}
+.hpy-feet-box {
+	padding: 30px;
+  background-color: #dcdcdc;
+  border-radius: 20px;
+}
+.hpy-feet-box li {
+	margin-bottom: 5px;
+}
+.hpy-feet-box li:last-child {
+	margin-bottom: 0;
+}
+.hpy-feet-box li svg {
+	fill: #EC1D25;
+	margin-right: 5px;
+}
+
+.hst-pop-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    display: none;
+}
+.hst-pop-modal-wrapper {
+    z-index: 9999999 !important;
+}
+
+.hst-pop-modal-wrapper:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.05em;
+}
+.btn-hst-pop-modal{
+  text-decoration: none;
+}
+.hst-pop-modal {
+    z-index: 1000000;
+    position: relative;
+}
+
+.hst-pop-modal.modal {
+    display: none;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;    
+    box-sizing: border-box;   
+    background-color: rgba(0,0,0, 0.8);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px #000;
+    -moz-box-shadow: 0 0 10px #000;
+    -o-box-shadow: 0 0 10px #000;
+    -ms-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+	height: 500px;
+}
+
+.hst-pop-modal h3{ 
+  color: #fff;
+}
+
+.hst-pop-modal .hst-pop-modal-title{   
+  margin-bottom: 15px;
+}
+.hst-pop-modal p{ 
+  color: #fff;
+}
+.close-hst-pop-modal {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.close-hst-pop-modal svg{
+  fill: #fff;
+  width: 18px;
+}
+
+.popup-form .header-form h4 {
+    margin-bottom: 20px;
+  color: #cccccc;
+}
+.popup-form fieldset {
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+}
+.popup-form .header-form form .hs-input{
+    background-color: transparent;
+    border: 0 !important;
+    border-bottom: 1px solid #dcdcdc;
+    height: 45px !important;
+    border-radius: 0 !important;
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Form Mode -1 */
+.popup-form .fmodel1.header-form form .hs-input{    
+    border: 0 !important;
+    border-bottom: 1px solid #dcdcdc !important;   
+}
+
+/* Form Mode -2 */
+.popup-form .fmodel2.header-form form .hs-input{     
+    border: 1px solid #dcdcdc !important;   
+  padding: 10px 20px;
+}
+
+.popup-form .header-form form .form-columns-1 .hs-input{
+  width: 100% !important;
+}
+.popup-form .header-form form .hs-fieldtype-textarea{
+  margin-top: 10px;
+}
+.popup-form .hs-form label{
+  color: #999999; 
+  font-weight: 600;
+}
+
+.popup-form form.hs-form .hs-form-booleancheckbox-display input[type=checkbox] {
+  width: auto !important;
+}
+.popup-form .inputs-list>li {
+    display: inline-block !important;
+    margin: 0 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.popup-form form .hs-richtext, form .hs-richtext p {
+    font-size: .875rem;
+    margin: 0 0 5px !important;
+}
+.popup-form .legal-consent-container .hs-form-booleancheckbox-display>span {
+    display: table-cell !important;
+    margin-left: 20px !important;
+}
+.popup-form .legal-consent-container .hs-form-booleancheckbox-display input {
+    float: none !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+.popup-form label.hs-form-booleancheckbox-display {
+  display: table !important;
+}
+.popup-form .legal-consent-container .hs-form-booleancheckbox-display input {
+    float: none !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+.popup-form .contact-form-background {
+  border: 1px solid #dcdcdc !important;
+  padding: 20px;
+  background: rgba(255,255,255,0);
+}
+
+.popup-form .hs_error_rollup {
+    display: none;
+}
+.modal img {
+  max-width: 100%;
+  height: auto;
+}
 /*===================== 23.MEDIA QUERIES START =====================*/
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1422,7 +1621,7 @@ div.mobile-wrapper {
 	}
 
 	.mm-menu .mega-menu { 
-		  width: 300px; 
+		  width: 300px !important; 
 	}
 	.res-row-margin-bottom {
 		margin-bottom: 30px;
@@ -1498,6 +1697,9 @@ div.mobile-wrapper {
 	.primary-btn svg,
 	.transparent-btn svg {
 	  margin-left: 5px;
+	}
+	.gallery-btns .primary-btn {
+		margin-bottom: 20px;
 	}
 }
 
@@ -1661,6 +1863,12 @@ div.mobile-wrapper {
 	
 	.single-recreate-content .gallery-btns {
 		display: table;
+	}
+	
+	.gallery-btns .primary-btn,
+	.gallery-btns .transparent2-btn {
+		min-width: 100px !important;
+		padding: 10px 15px !important;
 	}
 }
 
