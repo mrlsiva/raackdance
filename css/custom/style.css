@@ -423,15 +423,15 @@ iframe.location-map{
 	padding-right: 20px !important; 
 	transition: all .5s ease;
 }
-.navbar-nav li {
+.navbar-nav li.safari-menu {
 	padding: 30px 0;
 	transition: all .5s ease;
 }
-.navbar-nav li:hover { 
+.navbar-nav li.safari-menu:hover { 
 	margin-top: -25px;
 	transition: all .5s ease;
 }
-.navbar-nav li.logo-style:hover { 
+.navbar-nav li.safari-menu.logo-style:hover { 
 	margin-top: 0;
 	transition: all .5s ease;
 }
@@ -471,6 +471,49 @@ button:focus:not(:focus-visible) {
 	display: none;
 }
 
+.mm-menu {
+	position: relative;
+}
+.mm-menu .mega-menu {
+	position: absolute;
+  width: 700px;
+  z-index: 9;
+  background-color: #fff;
+  padding: 30px;
+  border-top: 3px solid #EC1D25;
+  top: 95px;
+  display: none;
+}
+.mm-menu:hover .mega-menu {	
+	display: block;
+}
+.mm-menu .mega-menu li svg {
+	fill: #EC1D25;
+	margin-right: 8px;
+	transition: all .5s ease;
+}
+
+.mm-menu .mega-menu li:hover svg {
+	fill: #EC1D25;
+	margin-right: 15px;
+	transition: all .5s ease;
+}
+.mm-menu .mega-menu li {
+	padding-bottom: 15px;
+	
+}
+.mm-menu .mega-menu li a{
+	color: #000;
+	font-family: "Montserrat";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	transition: all .5s ease;
+}
+.mm-menu .mega-menu li:last-child {
+	padding-bottom: 0;
+}
 /*================================================= 4.NAVIGATION END =============================================*/
 
 /*================================================= 5.HEADER START =================================================*/
@@ -1201,14 +1244,16 @@ input::placeholder {
 
 .studio-locate li {
 	display: inline-block;
+	padding: 10px 0;
+}
+.studio-locate li a {
 	padding: 10px 20px;
 	font-size: 18px;
-	margin: 2px;
 	cursor: pointer;
+	margin: 2px;	
 }
-
-.studio-locate li.active,
-.studio-locate li:hover {
+.studio-locate li.active a,
+.studio-locate li:hover a {
 	color: #ffffff;
 	border-radius: 66px;
 	background-color: #EC1D25;
@@ -1376,10 +1421,16 @@ div.mobile-wrapper {
 		line-height: 24px;
 	}
 
+	.mm-menu .mega-menu { 
+		  width: 300px; 
+	}
 	.res-row-margin-bottom {
 		margin-bottom: 30px;
 	}
 
+	.res-row-margin-bottom-menu {
+		margin-bottom: 15px;
+	}
 	.res-text-center {
 		text-align: center;
 	}
@@ -1753,7 +1804,7 @@ div.mobile-wrapper {
 		padding: 5px 0;
 	}
 	.navbar-nav li:hover { 
-		margin-top: 0;
+		margin-top: 0 !important;
 	}
 
 	.res-bot10 {
@@ -1954,6 +2005,16 @@ div.mobile-wrapper {
 @media only screen and (max-width: 991px) {
 	.com-ul-img.float-right {
 		float: none;
+	}
+	.navbar-nav li.safari-menu {
+		padding: 0;
+	}
+	.mm-menu .mega-menu {
+		padding: 20px;
+		left: 50%;
+		  transform: translateX(-50%); 
+		  top: 40px;
+		  width: 550px;
 	}
 }
 
