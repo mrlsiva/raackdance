@@ -53,6 +53,7 @@
 .calendar table thead tr th:first-child {
   width: 80px;
   border-top-left-radius: 16px;
+  display: none;
 }
 .calendar table thead tr th:last-child {
   border-top-right-radius: 16px;
@@ -119,6 +120,7 @@
   cursor: default;
   border-right-width: 1px;
   border-top-width: 1px;
+  display: none;
 }
 .calendar table tbody tr td.hour span {
   display: block;
@@ -456,6 +458,7 @@
   .calendar-wrap .item .time .title {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
   }
   .calendar-wrap .item .time .icon .tooltip {
     right: initial;
@@ -505,10 +508,7 @@
   }
   .calendar .item .rate {
     margin-bottom: 8px;
-  }
-  .calendar .item .time {
-    margin-bottom: 14px;
-  }
+  } 
   .calendar .item .time .title {
     align-items: flex-start;
     max-width: 60%;
