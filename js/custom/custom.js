@@ -8,6 +8,9 @@
 
 $(document).ready(function () {
 	"use strict"; //Start of Use Strict
+
+	lazyload();
+
 	var menu_li = $('.navbar-nav li a');
 	var collapse = $('.navbar-collapse');
 	var top_nav = $('.navbar-menu');
