@@ -1,59 +1,60 @@
 /*========================================== MASTER STYLESHEET ===========================================================
 
-	Project : RAACK SITE TEMPLATE 
-	Version : 1.0 
-	Primary Use : RAACK SITE TEMPLATE
+Project : RAACK SITE TEMPLATE 
+Version : 1.0 
+Primary Use : RAACK SITE TEMPLATE
 
 ==========================================================================================================================*/
 
 /*========================================== LAYOUT ===================================================================
 
-	1.GLOBAL CSS 
-	2.COMMON CSS 
-	3.BUTTON 
-	4.NAVIGATION 
-	5.HEADER 
-	6.COUNTER 
-	7.HOME ACADEMY
-	8.HOME VIDEO
-	9.PHILOSOPHY
-	10.CLIENT
-	11.CTA
-	12.TESTIMONIAL
-	13.FORM
-	14.CONTACT
-	15.FRANCHISE
-	16.CAREERS
-	17.FACULTIES TRAINING ACADEMY
-	18.EVENTS TICKET BOOKING
-	19.GALLERY
-	20.STUDIOS
-	21.COURSES
-	22.SINGLE COURSES
-	23.MEDIA QUERIES
+1.GLOBAL CSS 
+2.COMMON CSS 
+3.BUTTON 
+4.NAVIGATION 
+5.HEADER 
+6.COUNTER 
+7.HOME ACADEMY
+8.HOME VIDEO
+9.PHILOSOPHY
+10.CLIENT
+11.CTA
+12.TESTIMONIAL
+13.FORM
+14.CONTACT
+15.FRANCHISE
+16.CAREERS
+17.FACULTIES TRAINING ACADEMY
+18.EVENTS TICKET BOOKING
+19.GALLERY
+20.STUDIOS
+21.COURSES
+22.SINGLE COURSES
+23.MEDIA QUERIES
 
 
 ======================================================================================================================*/
 
 /*========================================== COLOR CODES ===============================================================
 
-	Primary Background:#ffffff [White] 
-	Secondary Background:#f5f5f5 [Gray] 
-	Theme Color :#EC1D25 [Red] 
-	Content Color :#424242 [Black] 
-	Button bg Color :#EC1D25 [Red]
+Primary Background:#ffffff [White] 
+Secondary Background:#f5f5f5 [Gray] 
+Theme Color :#EC1D25 [Red] 
+Content Color :#424242 [Black] 
+Button bg Color :#EC1D25 [Red]
 
 ================================================================================================================*/
 
 /*========================================== TYPOGRAPHY =====================================================
 
-	Heading:font-family: 'Montserrat', sans-serif;
-	Body :font-family: 'Montserrat', sans-serif;
+Heading:font-family: 'Montserrat', sans-serif;
+Body :font-family: 'Montserrat', sans-serif;
 
 ====================================================================================================================*/
 
 /*========================================== 1.GLOBAL CSS START ===========================================*/
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
 	font-family: 'Montserrat';
@@ -99,24 +100,24 @@ body {
 	background: #ffffff;
 	color: #4b5563;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 26px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
 	margin: 0 auto;
-	max-width: 1500px;
+	max-width: 100%;
 }
 
 p {
 	margin-bottom: 0px;
-	color: #4b5563;
+	color: #111827;
 }
 
 h1 {
 	color: #FFF;
 	font-family: 'Montserrat';
-	font-size: 51.2px;
+	font-size: 55px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 62px;
 	letter-spacing: 1px;
 }
@@ -125,8 +126,8 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 	color: #111827;
 	font-size: 50px;
-	font-weight: 700;
-	letter-spacing: 1px;
+	font-weight: 900;
+	letter-spacing: 0;
 	line-height: 60px;
 }
 
@@ -134,29 +135,29 @@ h3 {
 	font-family: 'Montserrat', sans-serif;
 	color: #111827;
 	font-size: 42px;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: 1px;
-	line-height: 52px;
+	line-height: 45px;
 }
 
 h4 {
 	font-family: 'Montserrat', sans-serif;
 	color: #111827;
 	font-size: 35px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 45px;
+	font-weight:900;
+	letter-spacing: 0;
+	line-height: 35px;
 }
 
 h5 {
 	font-family: 'Montserrat';
-	font-size: 20px;
+	color: #111827;
+	font-size: 25px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 30px;
+	font-weight: 900;
+	line-height: 25px;
 	/* 37.802px */
 	letter-spacing: 1px;
-	text-transform: uppercase;
 }
 
 h6 {
@@ -214,10 +215,6 @@ h6 {
 	opacity: 0;
 }
 
-.animate__animated {
-	opacity: 1;
-}
-
 iframe {
 	border: none;
 	width: 100%;
@@ -231,7 +228,15 @@ iframe.location-map {
 /*========================== 1.GLOBAL CSS END =====================*/
 
 /*========================= 2.COMMON CSS START =============================*/
-
+.font-weight400 {
+	font-weight: 400;
+}
+.font-weight600 {
+	font-weight: 600;
+}
+.font-weight900 {
+	font-weight: 900;
+}
 .float-right {
 	float: right;
 }
@@ -272,11 +277,10 @@ iframe.location-map {
 .intro-content {
 	color: #4b5563;
 	font-family: 'Montserrat';
-	font-size: 18px;
+	font-size: 20px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 28px;
-	letter-spacing: 1.5px;
 }
 
 .section-heading {
@@ -291,6 +295,9 @@ iframe.location-map {
 	color: #EC1D25;
 }
 
+.theme-color {
+	fill: #EC1D25;
+}
 .txt-dark {
 	color: #111827;
 }
@@ -310,7 +317,11 @@ iframe.location-map {
 .pb-50 {
 	padding-bottom: 50px;
 }
-
+.com-ul-img {
+	top: -25px;
+  position: relative;
+  left: -57px;
+}
 /*======================== 2.COMMON CSS END ================================*/
 
 /*========================== 3.BUTTON START ============================*/
@@ -423,7 +434,7 @@ iframe.location-map {
 	font-family: "Montserrat";
 	font-size: 18px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 900;
 	line-height: normal;
 	padding-left: 20px !important;
 	padding-right: 20px !important;
@@ -531,6 +542,19 @@ button:focus:not(:focus-visible) {
 	padding-bottom: 0;
 }
 
+.menu-social-share {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 40px;
+}
+.menu-social-share li {
+	margin: 0 10px;
+}
+.menu-social-share li svg {
+	width: 25px;
+	height: 25px;
+}
 /*================================================= 4.NAVIGATION END =============================================*/
 
 /*================================================= 5.HEADER START =================================================*/
@@ -558,38 +582,30 @@ button:focus:not(:focus-visible) {
 	height: 100%;
 }
 
-.slider-padding {
-	padding-bottom: 210px;
-	padding-top: 210px;
-}
-
 .slider-image1 {
-	border-radius: 66px;
-	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+	background: url("../../images/header-1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 300px 0 80px 0;
 }
 
+/* 
 .slider-image2 {
-	border-radius: 66px;
-	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
-	background-size: cover;
-	background-repeat: no-repeat;
+border-radius: 66px;
+background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .slider-image3 {
-	border-radius: 66px;
-	background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+border-radius: 66px;
+background: url("../../images/header-1.png"), lightgray -5.781px -234.321px / 103.028% 246.534% no-repeat;
+background-size: cover;
+background-repeat: no-repeat;
+} */
 
 .slider-header .header-content {
 	letter-spacing: 1px;
-}
-
-.bgimage-property {
-	height: 520px;
 }
 
 .stroke-text,
@@ -616,18 +632,17 @@ button:focus:not(:focus-visible) {
 /*=============================== 6.COUNTER AREA START ============================*/
 .counter-box {
 	background: #EC1D25;
-	padding: 50px 30px;
+	padding: 80px 30px;
 	text-align: center;
-	border-radius: 8px;
+	border-radius: 66px;
 }
 
 .count-num {
 	font-size: 50px;
 	font-family: "Montserrat";
 	line-height: 60px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin-bottom: 15px;
+	font-weight: 900;
+	letter-spacing: 1px; 
 	color: #ffffff;
 }
 
@@ -641,8 +656,7 @@ button:focus:not(:focus-visible) {
 	letter-spacing: 0.4px;
 }
 
-.title-counterup {
-	margin-top: 10px;
+.title-counterup { 
 	color: #ffffff;
 }
 
@@ -858,10 +872,48 @@ button:focus:not(:focus-visible) {
 
 
 .video-ul-img {
-	margin-top: -20px;
+	margin-top: -5px;
 	margin-left: 20px;
+	width: 120px;
+}
+.team-slider {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.team-slider .team-ul-img {
+	position: absolute;
+  left: 220px; 
+  margin-top: 10px;
 }
 
+.client-logo-slider {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.client-logo-slider .team-ul-img {
+	position: absolute;
+  left: 220px; 
+  margin-top: 10px;
+}
+
+.client-logo-slider .team-ul-img-right {
+	position: absolute;
+  right: 220px; 
+  margin-top: 10px;
+}
+
+.testimonial-slider {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.testimonial-slider .team-ul-img-right {
+	position: absolute;
+  right: 25px; 
+  margin-top: 10px;
+}
 /*============================== 8.HOME VIDEO AREA END ===========================*/
 
 /*=============================== 9.PHILOSOPHY AREA START ============================*/
@@ -1099,7 +1151,7 @@ form input {
 	width: 100%;
 	padding: 10px 20px 5px 20px;
 	background-color: transparent;
-	color: #999999;
+	color: #333333;
 }
 
 form .form-field {
@@ -1108,7 +1160,7 @@ form .form-field {
 
 input::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #999999;
+	color: #333333;
 	opacity: 1;
 	/* Firefox */
 }
@@ -1144,7 +1196,9 @@ input::placeholder {
 	bottom: 30px;
 	padding: 0 30px;
 }
-
+footer .last-ul ul li {
+	text-align: left;
+}
 /*============================== 14.CONTACT PAGE AREA END ===========================*/
 /*============================== 15.FRANCHISE PAGE AREA START ===========================*/
 .fran-ul {
@@ -1831,7 +1885,8 @@ form .hs-richtext p {
 		height: 40px;
 	}
 
-	.home-video-bg { 
+	.home-video-bg {
+		background-size: contain;
 		padding: 140px 0;
 	}
 
@@ -2374,6 +2429,10 @@ form .hs-richtext p {
 		width: 1.2em;
 		height: 1.2em;
 	}
+	.menu-social-share {
+		right: 40%;
+		transform: translateX(50%);
+	}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
@@ -2409,6 +2468,11 @@ form .hs-richtext p {
 		margin-right: 15px;
 		display: initial;
 	}
+	
+	.menu-social-share {
+		right: 50%;
+		transform: translateX(50%);
+	}
 }
 
 /* SAFARI MENU ISSUES*/
@@ -2429,6 +2493,12 @@ form .hs-richtext p {
 }
 
 @media only screen and (max-width: 991px) {
+	.client-logo-slider .team-ul-img {
+		left: 0;
+	}
+	.client-logo-slider .team-ul-img-right {
+		right: 0;
+	}
 	.com-ul-img.float-right {
 		float: none;
 	}
@@ -2444,6 +2514,14 @@ form .hs-richtext p {
 		top: 40px;
 		width: 550px;
 	}
+	.mar-left0 {
+		margin-left: 0;
+	}
+	footer .last-ul ul li {
+		text-align: center;
+	}
 }
-
+.animate__animated {
+  opacity: 1;
+}
 /*=================================== 23.MEDIA QUERIES END =======================================*/
