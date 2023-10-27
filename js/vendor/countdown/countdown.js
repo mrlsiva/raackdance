@@ -9,7 +9,7 @@ $(document).on('ready', function() {
 		//
 		// OPTIONS:"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 
-		setMonth: 'January',
+		setMonth: 'February',
 
 
 
@@ -17,7 +17,7 @@ $(document).on('ready', function() {
 		// -------
 		// SET DAY : INTEGER[ 1 - 31 ]
 
-		setDay: 20,
+		setDay: 4,
 
 
 

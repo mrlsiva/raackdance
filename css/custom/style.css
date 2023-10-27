@@ -55,9 +55,7 @@ Body :font-family: 'Montserrat', sans-serif;
 /*========================================== 1.GLOBAL CSS START ===========================================*/
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.our-team {
-	display: none;
-}
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
@@ -120,7 +118,7 @@ h1 {
 	font-size: 55px;
 	font-style: normal;
 	font-weight: 900;
-	line-height: 62px;
+	line-height: 55px;
 	letter-spacing: 1px;
 }
 
@@ -165,12 +163,16 @@ h5 {
 h6 {
 	font-family: 'Montserrat', sans-serif;
 	color: #424242;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	line-height: 28px;
+	line-height: 22px;
 }
 
+.normal-p {
+	font-size: 16px;
+	line-height: 26px;
+}
 /* SAFARI CLASS */
 
 .rowsafari {
@@ -222,11 +224,7 @@ iframe {
 	width: 100%;
 	height: 100vh;
 }
-
-iframe.location-map {
-	border-radius: 66px;
-}
-
+ 
 /*========================== 1.GLOBAL CSS END =====================*/
 
 /*========================= 2.COMMON CSS START =============================*/
@@ -237,7 +235,7 @@ iframe.location-map {
 	font-weight: 600;
 }
 .font-weight900 {
-	font-weight: 900;
+	font-weight: 900 !important;
 }
 .float-right {
 	float: right;
@@ -316,6 +314,10 @@ iframe.location-map {
 	display: table;
 }
 
+.pt-50 {
+	padding-top: 50px;
+}
+
 .pb-50 {
 	padding-bottom: 50px;
 }
@@ -323,6 +325,14 @@ iframe.location-map {
 	top: -25px;
   position: relative;
   left: -57px;
+}
+.client-logo-slider .course-ul-img-right {
+  position: absolute;
+  right: 262px;
+  margin-top: -15px;
+}
+.pt-0{
+	padding-top: 0;
 }
 /*======================== 2.COMMON CSS END ================================*/
 
@@ -333,7 +343,7 @@ iframe.location-map {
 	background-position: 0 0;
 	background-size: 100% 100%;
 	box-shadow: 0 20px 68px rgba(230, 0, 72, .23);
-	border-radius: 8px;
+	border-radius: 66px;
 	color: #fff;
 	fill: #fff;
 	display: inline-block;
@@ -613,11 +623,10 @@ background-repeat: no-repeat;
 .stroke-text,
 .header-testimonial h1 strong {
 	color: #FFF;
-	font-weight: 700;
-	letter-spacing: 0.39px;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #fff;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 70px;
+	line-height: 70px;
 }
 
 .stroke-text-black {
@@ -1046,11 +1055,10 @@ background-repeat: no-repeat;
 
 /*============================== 11.CTA AREA START ===========================*/
 .cta-bg-img {
-	background: url("../../images/cta-bg-img.png"), lightgray -5.781px -159.958px / 103.028% 180.07% no-repeat;
-	border-radius: 66px;
-	box-shadow: 0px 4px 10px 250px rgba(0, 0, 0, 0.20) inset;
+	background: url("../../images/cta-bg-img.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /*============================== 11.CTA AREA END ===========================*/
@@ -1137,10 +1145,7 @@ background-repeat: no-repeat;
 }
 
 .testimonial-card {
-	background-color: #fff;
-	border-radius: 66px;
 	margin: 0 20px;
-	box-shadow: 0px 8px 28px 0px #F0F0F0;
 }
 
 /*============================== 12.TESTIMONIAL AREA END ===========================*/
@@ -1350,32 +1355,66 @@ footer .last-ul ul li {
 
 .event-book-bg-img {
 	background: url("../../images/courses/header.png");
-	border-radius: 66px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
-	padding: 200px 0;
+	background-size: cover; 
 	width: 100%;
-}
-
-.event-book-header {
-	text-align: center;
-	width: 65%;
-	margin: 0 auto;
-}
+} 
 
 .book-day-col {
 	font-size: 50px;
 	font-weight: 700;
-	line-height: 60px;
+	line-height: 60px; 
+}
+.book-day-col .countdown {
+	font-size: 90px;
+	font-weight: 800;
 }
 
+.heal-the-world-about {
+	position: relative;
+}
+.heal-the-world-about svg {
+	width: 80px;
+	height: 80px;
+	fill:  #EC1D25;
+}
+.heal-the-world-about span {
+	font-size: 150px;
+	line-height: 150px;
+	font-weight: 400;
+	position: absolute;
+	top: 0;
+}
+.happy-feet {
+	display: flex;
+	align-items: center;
+}
+.happy-feet h1 {
+	font-size: 150px;
+	line-height: 150px;
+	font-weight: 400; 
+} 
+.health-world-1200 {
+	font-size: 150px;
+	line-height: 100px;
+	font-weight: 400;	
+	color:  #EC1D25;
+}
+.health-world-1200-com h3 {
+	line-height: 55px;
+}
+.text-right {
+	text-align: right;
+}
+.img-overlap-top{
+	margin-top: -80px;
+}
 /*============================== 18.EVENTS TICKET BOOKING PAGE AREA END ===========================*/
 /*============================== 19.GALLERY PAGE AREA START ===========================*/
 .gallery-bg-img {
-	background: url("../../images/gallery/header.png"), lightgray -13.406px -151.95px / 101.022% 172.609% no-repeat;
-	border-radius: 66px;
-	padding: 270px 0 60px 0;
+	background: url("../../images/gallery/header.jpg");
+	padding: 60px 0 200px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1392,6 +1431,7 @@ footer .last-ul ul li {
 .gallery-btns {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .gallery-btns .primary-btn {
@@ -1402,8 +1442,7 @@ footer .last-ul ul li {
 
 /*============================== 20.STUDIOS PAGE AREA START ===========================*/
 .studio-bg-img {
-	background: url("../../images/studios/header.png"), lightgray -13.406px -151.95px / 101.022% 172.609% no-repeat;
-	border-radius: 66px;
+	background: url("../../images/studios/header.jpg");
 	padding: 270px 0 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1411,7 +1450,7 @@ footer .last-ul ul li {
 
 .w-70 {
 	width: 70%;
-}
+}	
 
 .studio-locate {
 	width: 85%;
@@ -1503,16 +1542,23 @@ section.calendar-tabs .custom-select select {
 	width: 39%;
 	margin: 0 auto;
 }
-
+.owl-pagination {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px !important;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: #000000;	
+}
 /*============================== 21.COURSES PAGE AREA END ===========================*/
 
 /*============================== 22.SINGLE COURSES PAGE AREA START ===========================*/
 .single-course-bg-img {
-	border-radius: 66px;
-	background: url("../../images/home-video-bg.png"), -12.248px -16.9px / 100.944% 106.507% no-repeat;
+	background: url("../../images/home-video-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 50px 0 300px;
+	padding: 50px 0 0;
 	background-position: center;
 }
 
@@ -1835,6 +1881,12 @@ form .hs-richtext p {
 }
 
 @media only screen and (max-width: 575px) {
+	
+.client-logo-slider .course-ul-img-right {
+	right: inherit;
+	left: 0;
+	position: inherit;
+}
 	h1 {
 		font-size: 30px;
 		line-height: 40px;
@@ -2159,6 +2211,15 @@ form .hs-richtext p {
 		margin-bottom: 30px;
 	}
 
+	.res-margin-auto {
+		margin: 0 auto;
+	}
+	.res-margin-auto .menu-social-share {
+		justify-content: center !important;
+	}
+	.footer-logo {
+		text-align: center;
+	}
 	.video-ul-img {
 		margin-top: 0;
 		margin-left: 0;
@@ -2222,6 +2283,10 @@ form .hs-richtext p {
 	.mobile-wrapper .owl-next {
 		left: 0;
 	}
+	.book-day-col .countdown {
+		font-size: 50px;
+		font-weight: 800;
+	}
 }
 
 @media only screen and (max-width: 414px) {
@@ -2234,7 +2299,12 @@ form .hs-richtext p {
 	.order-lg-last {
 		order: -1 !important;
 	}
-
+.client-logo-slider .course-ul-img-right,
+.team-slider .team-ul-img {
+	position: inherit;
+	width: 80px;
+	left: 0;
+}
 	.nav-style {
 		padding-bottom: 10px;
 		padding-top: 10px;
@@ -2492,14 +2562,23 @@ form .hs-richtext p {
 		display: inline-block !important;
 		vertical-align: middle !important;
 	}
+	.fs-60 {
+		font-size: 60px;
+		font-weight: 800;
+	}
 }
 
 @media only screen and (max-width: 991px) {
-	.client-logo-slider .team-ul-img {
-		left: 0;
+	.health-world-1200 {
+		font-size: 70px;
+		line-height:70px;
 	}
+	.client-logo-slider .team-ul-img {
+		display: none;
+	}
+	.testimonial-slider .team-ul-img-right,
 	.client-logo-slider .team-ul-img-right {
-		right: 0;
+		display: none;
 	}
 	.com-ul-img.float-right {
 		float: none;
