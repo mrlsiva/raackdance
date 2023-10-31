@@ -2737,3 +2737,9 @@ form .hs-richtext p {
   opacity: 1;
 }
 /*=================================== 23.MEDIA QUERIES END =======================================*/
+.small-logo img {
+	max-height: 180px;
+}
+.small-logo h4 {
+	font-size: 24px !important;
+}
