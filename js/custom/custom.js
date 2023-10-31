@@ -78,5 +78,12 @@ $(document).ready(function () {
         $($(this).parent('.hst-pop-modal')).hide(400);
         return false;
     });
+	
+	
+	// YOUTUBE BACKGROUND VIDEO FUNCTION	  
+    var player = $('.player');
+    if (player.length) {
+        player.mb_YTPlayer();
+    }
 
 });
