@@ -85,5 +85,16 @@ $(document).ready(function () {
     if (player.length) {
         player.mb_YTPlayer();
     }
+	
+	$(window).bind('resize load', function () {
+		if( $('#yt-shorts').length ){ 
+			var $ytShorts = $("#yt-shorts");
+			var frameHeight = $ytShorts.innerHeight();
+			$ytShorts.find('.yt-shorts-frame').each(function(){
+				$(this).css('height', frameHeight);	
+			});					
+		}
+	});
+
 
 });

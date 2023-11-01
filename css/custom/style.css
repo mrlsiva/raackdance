@@ -971,6 +971,61 @@ background-repeat: no-repeat;
 	letter-spacing: 0.504px;
 }
 
+.person {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.container-team {
+  height: 312px;
+  width: 400px;
+  cursor: pointer;
+  transform: scale(0.48);
+  transition: transform 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person .circle {
+  position: absolute;
+  background: var(--color);
+  height: 380px;
+  width: 380px;
+  top: 210px;
+  left: 10px;
+  border-radius: 50%;
+}
+.person img {
+  position: relative;
+  width: 340px;
+  top: 164px;
+  left: 22px;
+  transform: translateY(20px) scale(1.15);
+  transition: transform 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+.conianer-inner {
+  position: relative;
+  clip-path: path("M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z");
+  top: -200px;
+} 
+.person h1 {
+  color: #464646;
+  margin: 16px 0 0 0;
+}
+.person p {
+  font-family: arial;
+  color: #6e6e6e;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* hover */
+.container-team:hover {
+  transform: scale(0.54);
+} 
+.container-team:hover img {
+  transform: translateY(0) scale(1.3);
+}
 /*============================== 9.PHILOSOPHY AREA END ===========================*/
 
 /*============================== 10.CLIENT AREA START ===========================*/
@@ -1796,7 +1851,6 @@ z-index: -1;
 	vertical-align: middle;
 	margin-right: -0.05em;
 }
-
 .hst-pop-modal.modal-1 {
 	display: none;
 	vertical-align: middle;
@@ -1821,10 +1875,23 @@ z-index: -1;
 	height: 600px;
 }
 
+#header-testimonial1 .hst-pop-modal.modal-1 {
+	padding: 0;
+}
 
-
-
-
+#header-testimonial1 .hst-pop-modal-wrapper-1 {
+	padding:0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#header-testimonial1 .hst-pop-modal-wrapper-1::before {
+	display: table;
+}
+#header-testimonial1  #hst-pop-modal_name {
+	position: absolute;
+  top: 0px;
+  left: 0px;
+}
 .btn-hst-pop-modal {
 	text-decoration: none;
 }
@@ -2742,4 +2809,63 @@ form .hs-richtext p {
 }
 .small-logo h4 {
 	font-size: 24px !important;
+}
+
+.core-team-bg {
+	background: url("../../images/team-bg.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+	position: realtive;
+	overflow: hidden;
+}
+
+.core-team-bg img{
+	z-index: 1;
+	position: relative;
+}
+
+.core-team-bg:after {
+	content: "";
+	background-color: #ffffff;
+	width: 130%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 99999;
+	height: 30%;
+	transform: rotate(135deg);
+}
+
+.pos-relative {
+	z-index: 99999;
+	position: relative;
+}
+.our-team img {
+	
+	transition: all 1s ease-in-out;
+}
+.our-team:hover img {
+	transform: scale(1.2);
+	transition: all 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+@media only screen and (max-width: 991px) {
+	.core-team-bg:after {		
+		height: 28%;		
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.core-team-bg:after {		
+		height: 25%;		
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.core-team-bg:after {		
+		height: 30%;
+		bottom: -73px;		
+	}
 }
