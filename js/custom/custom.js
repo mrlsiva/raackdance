@@ -95,6 +95,11 @@ $(document).ready(function () {
 			});					
 		}
 	});
-
-
+	
+	$(document).on( 'click', "#yt-shorts .owl-prev, #yt-shorts .owl-next, #yt-shorts .owl-page", function(){
+		$(document).find('#yt-shorts .yt-shorts-frame').each(function(index) {
+			$(this).attr('src', $(this).attr('src'));
+		});
+		return false;
+	});
 });

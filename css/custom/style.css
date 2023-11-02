@@ -218,13 +218,13 @@ h6 {
 .animate-scroll {
 	opacity: 0;
 }
-
+/*
 iframe {
 	border: none;
 	width: 100%;
 	height: 100vh;
 }
-
+*/
 .text-gray-clr {
 	color: #666666;
 }
@@ -1527,7 +1527,6 @@ footer .last-ul ul li {
 
 .gallery-ul {
 	margin-top: -50px;
-	;
 }
 
 .gallery-btns {
@@ -1547,21 +1546,161 @@ footer .last-ul ul li {
   height: 97vh;
   border-radius: 25px;
 }
+/*
 iframe {
   min-width: 100%;
   height: 100%;
   z-index: 1;
-}
+} */
 /*============================== 19.GALLERY PAGE AREA END ===========================*/
 
 /*============================== 20.STUDIOS PAGE AREA START ===========================*/
-.studio-bg-img {
+.studio-bg-img-pandicherry {
+	background: url("../../images/studio-bg-image/Pondicherry.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+.studio-bg-img-tambaram {
+	background: url("../../images/studio-bg-image/Tambaram.png");
 	padding: 300px 0 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	Background-position: center;
 }
 
+.studio-bg-img-mylapore {
+	background: url("../../images/studio-bg-image/Mylapore.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-velachery {
+	background: url("../../images/studio-bg-image/velachery.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-cuddalore {
+	background: url("../../images/studio-bg-image/cuddalore.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+.studio-bg-img-mogappair {
+	background-color: #333;
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-kilpauk {
+	background: url("../../images/studio-bg-image/Kilpauk.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+.studio-bg-img-thoraipakkam {
+	background: url("../../images/studio-bg-image/Thoraipakkam.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+.studio-bg-img-avadi {
+	background: url("../../images/studio-bg-image/Avadi.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-keelkattalai {
+	background: url("../../images/studio-bg-image/Keelkattalai.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+.studio-bg-img-mugalivakkam {
+	background: url("../../images/studio-bg-image/Mugalivakkam.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-neelankarai {
+	background: url("../../images/studio-bg-image/Neelankarai.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-kolathur {
+	background: url("../../images/studio-bg-image/Kolathur.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-pallikaranai {
+	background: url("../../images/studio-bg-image/Pallikaranai.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-sholiganallur {	
+	background-color: #333;
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+} 
+
+.studio-bg-img-perungalathur {
+	background: url("../../images/studio-bg-image/Perungalathur.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-guduvanchery {
+	background: url("../../images/studio-bg-image/Guduvanchery.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-ramapuram {
+	background: url("../../images/studio-bg-image/Ramapuram.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
+
+.studio-bg-img-saidapet {
+	background: url("../../images/studio-bg-image/Saidapet.png");
+	padding: 300px 0 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	Background-position: center;
+}
 .w-70 {
 	width: 70%;
 }	
@@ -1628,6 +1767,28 @@ section.calendar-tabs .custom-select select {
 	margin-right: 20px;
 }
 
+.location-map {
+	max-width: 100%;
+  height: 500px;
+  width: 100%;
+}
+.branch-head-img {
+	width: 300px;
+  height: 400px;
+}
+.branch-head-name {
+	display: table;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  width: 325px;
+}
+.branch-head-name button {
+min-width: 100%;
+  padding: 20px 20px !important;
+  }
 /*============================== 20.STUDIOS PAGE AREA END ===========================*/
 
 /*============================== 21.COURSES PAGE AREA START ===========================*/
