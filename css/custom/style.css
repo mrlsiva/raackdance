@@ -1670,8 +1670,7 @@ iframe {
 	Background-position: center;
 } 
 
-.studio-bg-img-perungalathur {
-	background: url("../../images/studio-bg-image/Perungalathur.png");
+.studio-bg-img {
 	padding: 300px 0 60px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
