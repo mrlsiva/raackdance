@@ -2965,7 +2965,7 @@ form .hs-richtext p {
 }
 /*=================================== 23.MEDIA QUERIES END =======================================*/
 .small-logo img {
-	max-height: 180px;
+	max-height: 120px;
 }
 .small-logo h4 {
 	font-size: 24px !important;
@@ -3029,3 +3029,13 @@ form .hs-richtext p {
 		bottom: -73px;		
 	}
 }
+.new-header-sec {
+	position: relative;
+	
+}
+.new-header-sec h2 {
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	color: #fff;
+ }
