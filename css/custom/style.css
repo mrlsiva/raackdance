@@ -410,7 +410,7 @@ iframe {
 	font-size: 16px;
 	font-weight: 900;
 	color: #424242;
-	padding: 10px 20px !important;
+	padding: 10px 20px;
 	transition: all 0.3s ease-in;
 	letter-spacing: 1px;
 	border: 2px solid #424242;
@@ -449,7 +449,16 @@ iframe {
 /*============================== 3.BUTTON END ==============================*/
 
 /*========================= 4.NAVIGATION START ===================================*/
-
+.pre-header {
+	padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+.pre-header .contact-items {
+	display: flex; 
+	justify-content:left;
+	align-items: center;
+	margin-bottom: 5px;
+}
 .nav-style {
 	color: #000;
 	font-family: "Montserrat";
@@ -527,7 +536,9 @@ button:focus:not(:focus-visible) {
 	top: 95px;
 	display: none;
 }
-
+.mm-menu.menu .mega-menu {
+	width: 300px;
+}
 .mm-menu:hover .mega-menu {
 	display: block;
 }
@@ -565,9 +576,7 @@ button:focus:not(:focus-visible) {
 
 .menu-social-share {
 	display: flex;
-	align-items: center;
-	position: absolute;
-	right: 40px;
+	align-items: center; 
 }
 .menu-social-share li {
 	margin: 0 10px;
@@ -579,7 +588,40 @@ button:focus:not(:focus-visible) {
 /*================================================= 4.NAVIGATION END =============================================*/
 
 /*================================================= 5.HEADER START =================================================*/
+.splide__track {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
 
+.splide__list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+.splide__slide.is-active{
+  z-index: 1;
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+}
 .slider-header .owl-demo .owl-controls,
 .slider-header .owl-demo .owl-dots {
 	margin-top: 15px;
@@ -588,7 +630,6 @@ button:focus:not(:focus-visible) {
 	right: 0;
 	bottom: 20px;
 }
-
 .slider-header#owl-demo .item {
 	margin: 0;
 }
@@ -606,8 +647,7 @@ button:focus:not(:focus-visible) {
 .slider-image1 {
 	background: url("../../images/header-1.png");
 	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 350px 0 80px 0 !important;
+	background-repeat: no-repeat;  
 	Background-position: center;
 }
 
@@ -616,7 +656,6 @@ button:focus:not(:focus-visible) {
 background: url("../../images/header-2.png");
 background-size: cover;
 background-repeat: no-repeat;
-	padding: 350px 0 80px 0 !important;
 	Background-position: center;
 }
 
@@ -624,7 +663,6 @@ background-repeat: no-repeat;
 background: url("../../images/header-3.png");
 background-size: cover;
 background-repeat: no-repeat;
-	padding: 350px 0 80px 0 !important;
 	Background-position: center;
 } 
 
@@ -632,8 +670,7 @@ background-repeat: no-repeat;
 .slider-image4 {
 background: url("../../images/header-4.png");
 background-size: cover;
-background-repeat: no-repeat;
-	padding: 450px 0 80px 0 !important;
+background-repeat: no-repeat; 
 	Background-position: center;
 } 
 .slider-header .header-content {
@@ -664,6 +701,11 @@ background-repeat: no-repeat;
 }
 .player {
 	font-size: 1px;
+}
+
+#myVideo { 
+  min-width: 100%; 
+  min-height: 100%;
 }
 /*======================================== 5.HEADER END ==============================*/
 
@@ -1233,6 +1275,11 @@ background-repeat: no-repeat;
 /*============================== 12.TESTIMONIAL AREA END ===========================*/
 
 /*============================== 13.FORM AREA START ===========================*/
+select:focus-visible,
+input.form-input:focus-visible {
+    outline: unset;
+}
+
 select,
 form input {
 	border: 0;
@@ -1378,8 +1425,7 @@ footer .last-ul ul li {
 }
 
 .event-content {
-	width: 80%;
-	margin: 0 auto;
+	margin-top: 30px;
 }
 
 .event-content ul {
@@ -2090,6 +2136,7 @@ form .hs-richtext p {
 
 @media only screen and (max-width: 575px) {
 	
+	
 .client-logo-slider .course-ul-img-right {
 	right: inherit;
 	left: 0;
@@ -2389,6 +2436,10 @@ form .hs-richtext p {
 
 @media only screen and (max-width: 767px) {
 
+	.pre-header .contact-items { 
+		justify-content:center !important; 
+		margin-bottom: 15px;
+	}
 	.section-margin-bottom {
 		margin-bottom: 10px;
 	}
@@ -2726,10 +2777,6 @@ form .hs-richtext p {
 		width: 1.2em;
 		height: 1.2em;
 	}
-	.menu-social-share {
-		right: 40%;
-		transform: translateX(50%);
-	}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
@@ -2764,12 +2811,7 @@ form .hs-richtext p {
 		padding: 20px;
 		margin-right: 15px;
 		display: initial;
-	}
-	
-	.menu-social-share {
-		right: 50%;
-		transform: translateX(50%);
-	}
+	} 
 }
 
 /* SAFARI MENU ISSUES*/
@@ -2854,7 +2896,7 @@ form .hs-richtext p {
 	right: 0;
 	left: 0;
 	z-index: 99999;
-	height: 30%;
+	height: 33%;
 	transform: rotate(135deg);
 }
 
@@ -2863,11 +2905,12 @@ form .hs-richtext p {
 	position: relative;
 }
 .our-team img {
-	
+	position: relative;
+	bottom:0;
 	transition: all 1s ease-in-out;
 }
 .our-team:hover img {
-	transform: scale(1.1);
+	bottom: 40px;
 	transition: all 1s ease-in-out;
 	transition-timing-function: ease-in-out;
 }
@@ -2888,6 +2931,7 @@ form .hs-richtext p {
 		height: 30%;
 		bottom: -73px;		
 	}
+	
 }
 .new-header-sec {
 	position: relative;
