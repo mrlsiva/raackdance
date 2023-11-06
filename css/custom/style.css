@@ -190,6 +190,10 @@ a {
 	text-decoration: none;
 }
 
+.headerfont p{
+	font-size: 12px;
+}
+
 a:hover {
 	color: #EC1D25;
 	text-decoration: none !important;
@@ -581,7 +585,16 @@ button:focus:not(:focus-visible) {
 .menu-social-share li {
 	margin: 0 10px;
 }
-.menu-social-share li svg {
+
+.icons-social {
+	width: 15px;
+	height: 15px;
+}
+.social-icons li svg {
+	width: 15px;
+	height: 15px;
+}
+.social-f-icons li svg {
 	width: 25px;
 	height: 25px;
 }
