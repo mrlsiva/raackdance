@@ -1708,6 +1708,12 @@ section.calendar-tabs .custom-select select {
 min-width: 100%;
   padding: 20px 20px !important;
   }
+.studio-contact-bg {
+	background: url("../../images/icons/studio-contact-bg.jpg"); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
 /*============================== 20.STUDIOS PAGE AREA END ===========================*/
 
 /*============================== 21.COURSES PAGE AREA START ===========================*/
