@@ -2962,3 +2962,14 @@ form .hs-richtext p {
 	right: 60px;
 	color: #fff;
  }
+
+
+
+ /* view class scedule */
+ .faq .answer {
+	display: none;
+ }
+
+ .faq button {
+	cursor: pointer;
+ }
