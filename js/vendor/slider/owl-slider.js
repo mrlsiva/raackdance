@@ -37,7 +37,7 @@ $(document).on('ready', function() {
 		itemsMobile:[575,1],
         pagination:true,
         navigation:true,
-        navigationText:["<img src='images/icons/arrow-left.png'>","<img src='images/icons/arrow-right.png'>"],
+        navigationText:["<img src='images-raack/icons/arrow-left.png'>","<img src='images-raack/icons/arrow-right.png'>"],
         autoPlay:false
 	  }); 
 

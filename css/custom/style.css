@@ -658,7 +658,7 @@ ul {
 }
 
 .slider-image1 {
-	background: url("../../images/header-1.png");
+	background: url("../../images-raack/header-1.png");
 	background-size: cover;
 	background-repeat: no-repeat;  
 	Background-position: center;
@@ -666,14 +666,14 @@ ul {
 
 
 .slider-image2 {
-background: url("../../images/header-2.png");
+background: url("../../images-raack/header-2.png");
 background-size: cover;
 background-repeat: no-repeat;
 	Background-position: center;
 }
 
 .slider-image3 {
-background: url("../../images/header-3.png");
+background: url("../../images-raack/header-3.png");
 background-size: cover;
 background-repeat: no-repeat;
 	Background-position: center;
@@ -681,7 +681,7 @@ background-repeat: no-repeat;
 
 
 .slider-image4 {
-background: url("../../images/header-4.png");
+background: url("../../images-raack/header-4.png");
 background-size: cover;
 background-repeat: no-repeat; 
 	Background-position: center;
@@ -932,7 +932,7 @@ background-repeat: no-repeat;
 
 /*=============================== 8.HOME VIDEO AREA START ============================*/
 .home-video-bg {
-	background-image: url("../../images/home-video-bg.png");
+	background-image: url("../../images-raack/home-video-bg.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1190,7 +1190,7 @@ background-repeat: no-repeat;
 
 /*============================== 11.CTA AREA START ===========================*/
 .cta-bg-img {
-	background: url("../../images/cta-bg-img.jpg");
+	background: url("../../images-raack/cta-bg-img.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1318,7 +1318,7 @@ input::placeholder {
 
 /*============================== 14.CONTACT PAGE AREA START ===========================*/
 .contact-bg-img {
-	background: url("../../images/contact/header.png"), lightgray -5.781px -159.958px / 103.028% 180.07% no-repeat;
+	background: url("../../images-raack/contact/header.png"), lightgray -5.781px -159.958px / 103.028% 180.07% no-repeat;
 	/* border-radius: 66px; */
 	box-shadow: 0px 4px 10px 250px rgba(0, 0, 0, 0.20) inset;
 	padding: 350px 0 60px 0;
@@ -1397,7 +1397,7 @@ footer .last-ul ul li {
 
 /*============================== 16.CAREERS PAGE AREA START ===========================*/
 .career-bg-img {
-	background: url("../../images/careers/header.png"), lightgray -13.406px -151.95px / 101.022% 172.609% no-repeat;
+	background: url("../../images-raack/careers/header.png"), lightgray -13.406px -151.95px / 101.022% 172.609% no-repeat;
 	border-radius: 66px;
 	padding: 270px 0 60px 0;
 	background-size: cover;
@@ -1457,7 +1457,7 @@ footer .last-ul ul li {
 
 /*============================== 17.FACULTIES TRAINING ACADEMY PAGE AREA START ===========================*/
 .faculties-bg-img {
-	background: url("../../images/faculties/header.jpg");
+	background: url("../../images-raack/faculties/header.jpg");
 	border-radius: 66px;
 	padding: 300px 0 60px 0;
 	background-size: cover;
@@ -1495,7 +1495,7 @@ footer .last-ul ul li {
 }
 
 .event-book-bg-img {
-	background: url("../../images/courses/header.png");
+	background: url("../../images-raack/courses/header.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover; 
@@ -1573,7 +1573,7 @@ footer .last-ul ul li {
 /*============================== 18.EVENTS TICKET BOOKING PAGE AREA END ===========================*/
 /*============================== 19.GALLERY PAGE AREA START ===========================*/
 .gallery-bg-img {
-	background: url("../../images/gallery/header.jpg");
+	background: url("../../images-raack/gallery/header.jpg");
 	padding: 60px 0 250px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1709,7 +1709,7 @@ min-width: 100%;
   padding: 20px 20px !important;
   }
 .studio-contact-bg {
-	background: url("../../images/icons/studio-contact-bg.jpg"); 
+	background: url("../../images-raack/icons/studio-contact-bg.jpg"); 
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover; 
@@ -1718,7 +1718,7 @@ min-width: 100%;
 
 /*============================== 21.COURSES PAGE AREA START ===========================*/
 .courses1-bg-img {
-	background: url("../../images/courses/header.jpg"); 
+	background: url("../../images-raack/courses/header.jpg"); 
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1727,7 +1727,7 @@ min-width: 100%;
 }
 
 .courses2-bg-img {
-	background: url("../../images/courses/header2.png");
+	background: url("../../images-raack/courses/header2.png");
 	border-radius: 66px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1754,7 +1754,7 @@ min-width: 100%;
 
 /*============================== 22.SINGLE COURSES PAGE AREA START ===========================*/
 .single-course-bg-img {
-	background: url("../../images/home-video-bg.png");
+	background: url("../../images-raack/home-video-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px 0 ;
@@ -2893,7 +2893,7 @@ form .hs-richtext p {
 }
 
 .core-team-bg {
-	background: url("../../images/team-bg.png");
+	background: url("../../images-raack/team-bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	Background-position: center;
