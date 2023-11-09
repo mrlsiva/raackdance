@@ -455,13 +455,13 @@ observer.observe(document.getElementById('video-section'));
       <!--================================= BUTTON AREA START =======================-->
       <section class="section-white-bg animate-scroll" style="padding-top: 50px; padding-bottom: 50px;" data-animate="animate__animated animate__fadeInUp">
          <div class="container text-center">
-            <button class="primary-btn" style="border-radius: 10px;">
+            <a href="studios.html" class="primary-btn" style="border-radius: 10px;">
                Learn More
                <svg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 320 512'>
                   <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                   <path d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/>
                </svg>
-            </button>
+            </a>
          </div>
       </section>
       <!--================================ BUTTON AREA END ============================-->
@@ -638,7 +638,7 @@ observer.observe(document.getElementById('video-section'));
                      <div class="form-field">
                         <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
                      </div>
-					  <div class="form-field">
+					      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <input type="text" name="phone" class="form-input" value="" placeholder="Mobile No" required autocomplete="off" onkeypress="return isNumber(event)">
                         </div>
@@ -662,7 +662,30 @@ observer.observe(document.getElementById('video-section'));
                         </div>
                      </div>               
                      <div class="form-field">
-                        <input type="text" name="lname" class="form-input" value="" placeholder="Location" required autocomplete="off">
+                        <div class="form-textarea-top-spacing">
+                           <select name="course" id="course">
+                              <option value="location">Location</option>
+                              <option value="Tambaram">Tambaram</option>
+                              <option value="Mylapore">Mylapore</option>
+                              <option value="Velachery">Velachery</option>
+                              <option value="Perungalathur">Perungalathur</option>
+                              <option value="Mogappair">Mogappair</option>
+                              <option value="Avadi">Avadi</option>
+                              <option value="Sholinganallur">Sholinganallur</option>
+                              <option value="Thoraipakkam">Thoraipakkam</option>
+                              <option value="Neelankarai">Neelankarai</option>
+                              <option value="Ramapuram">Ramapuram</option>
+                              <option value="Mugalivakkam">Mugalivakkam</option>
+                              <option value="Keelkattalai">Keelkattalai</option>
+                              <option value="Saidapet">Saidapet</option>
+                              <option value="Pallikaranai">Pallikaranai</option>
+                              <option value="Kilpauk">Kilpauk</option>
+                              <option value="Kolathur">Kolathur</option>
+                              <option value="Guduvanchery">Guduvanchery</option>
+                              <option value="Pondicherry">Pondicherry</option>
+                              <option value="Cuddalore">Cuddalore</option>
+                           </select>
+                        </div>
                      </div>
                      <div class="btn-wrapper text-center" style="margin-top: 40px;">
                         <button class="primary-btn" type="submit">Submit</button>
@@ -716,11 +739,11 @@ observer.observe(document.getElementById('video-section'));
                <div class="col-lg-3 col-sm-6 col-md-3 col-12 text-center res-margin-bottom">
                   <p class="section-grp-margin-bottom font-weight900 text-gray-clr text-capitalize"><b>DISCOVER</b></p>
 				  <ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Studio</a></li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Events & Galleries</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="studios.html">Studio</a></li>
+					<li><a href="courses.html">Courses</a></li>
+					<li><a href="event-galleries.html">Events & Galleries</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				  </ul>
                </div>
                <div class="col-lg-3 col-sm-6 col-md-3 col-12 text-center res-row-margin-bottom">
