@@ -728,6 +728,7 @@ background-repeat: no-repeat;
 	padding: 80px 30px;
 	text-align: center;
 	border-radius: 66px;
+	/* background-image: url("../../images-raack/decor.png"); */
 }
 
 .count-num {
