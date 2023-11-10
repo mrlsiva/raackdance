@@ -25,7 +25,7 @@ Primary Use : RAACK SITE TEMPLATE
 15.FRANCHISE
 16.CAREERS
 17.FACULTIES TRAINING ACADEMY
-18.EVENTS TICKET BOOKING
+18.
 19.GALLERY
 20.STUDIOS
 21.COURSES
@@ -1485,7 +1485,7 @@ footer .last-ul ul li {
 
 /*============================== 17.FACULTIES TRAINING ACADEMY PAGE AREA END ===========================*/
 
-/*============================== 18.EVENTS TICKET BOOKING PAGE AREA START ===========================*/
+/*============================== 18. PAGE AREA START ===========================*/
 .primary-btn.btn-disabled,
 .primary-btn.btn-disabled:hover {
 	background-color: rgb(242, 106, 111);
@@ -1575,7 +1575,7 @@ footer .last-ul ul li {
 	bottom: 60px;
 	right: 60px;
 }
-/*============================== 18.EVENTS TICKET BOOKING PAGE AREA END ===========================*/
+/*============================== 18. PAGE AREA END ===========================*/
 /*============================== 19.GALLERY PAGE AREA START ===========================*/
 .gallery-bg-img {
 	background: url("../../images-raack/gallery/header.jpg");
