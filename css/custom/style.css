@@ -2978,3 +2978,8 @@ form .hs-richtext p {
  .faq button {
 	cursor: pointer;
  }
+
+
+ #course option{
+	font-family:'Montserrat';
+ }
