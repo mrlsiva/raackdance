@@ -235,6 +235,33 @@ iframe {
 /*========================== 1.GLOBAL CSS END =====================*/
 
 /*========================= 2.COMMON CSS START =============================*/
+.loader {
+	border: 8px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 8px solid #3498db;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50px);
+	display: table;
+	margin: 0 auto;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
 .font-weight300 {
 	font-weight: 300 !important;
 }
@@ -601,6 +628,51 @@ button:focus:not(:focus-visible) {
 /*================================================= 4.NAVIGATION END =============================================*/
 
 /*================================================= 5.HEADER START =================================================*/
+.header-testimonial.owl-theme.animated {
+	-webkit-animation-duration: 0 ms !important;
+	animation-duration: 0 ms !important;
+	-webkit-animation-fill-mode: both !important;
+	animation-fill-mode: both !important;
+  }
+  .header-testimonial.owl-theme.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+  }
+  @-webkit-keyframes fadeOut {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+  @keyframes fadeOut {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+.header-testimonial.owl-theme .owl-nav {
+	display: flex;
+  margin: 0 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  left: 0;
+  right: 0;
+}
+.header-testimonial.owl-theme .owl-nav .owl-prev {
+	display: table;
+    margin-right: auto;
+    margin-left: 0;
+}
+.header-testimonial.owl-theme .owl-nav .owl-next {
+	display: table;
+    margin-right: 0;
+    margin-left: auto;
+}
 .splide__track {
   width: 100%;
   height: 520px;
@@ -724,26 +796,28 @@ background-repeat: no-repeat;
 
 /*=============================== 6.COUNTER AREA START ============================*/
 .counter-box {
-	background: #EC1D25;
-	padding: 80px 30px;
+	padding: 80px 60px;
 	text-align: center;
 	border-radius: 66px;
-	/* background-image: url("../../images-raack/decor.png"); */
+	background-image: url("../../images-raack/decor.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .count-num {
-	font-size: 50px;
+	font-size: 40px;
 	font-family: "Montserrat";
 	line-height: 60px;
 	font-weight: 900;
 	letter-spacing: 1px; 
-	color: #ffffff;
+	color: #EC1D25;
 }
 
 .counter-box p {
-	color: #ffffff;
+	color: #EC1D25;
 	font-family: "Montserrat";
-	font-size: 50px;
+	font-size: 40px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 60px;
@@ -751,7 +825,11 @@ background-repeat: no-repeat;
 }
 
 .title-counterup { 
-	color: #ffffff;
+	color: #EC1D25;
+	font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 22px;
 }
 
 .count-text {
@@ -1217,6 +1295,8 @@ background-repeat: no-repeat;
 	width: auto;
 	position: absolute;
 	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	padding: 10px 15px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
 }
@@ -1227,10 +1307,18 @@ background-repeat: no-repeat;
 	width: auto;
 	position: absolute;
 	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
 	padding: 10px 15px;
 }
 
+.client-testimonial.owl-theme .owl-nav [class*="owl-"] {
+	fill: #333;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
 .team-destination {
 	color: #6b7280;
 	font-size: 14px;
@@ -1293,7 +1381,12 @@ select:focus-visible,
 input.form-input:focus-visible {
     outline: unset;
 }
-
+label.error {
+	color: #ff0000;
+	font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  }
 select,
 form input {
 	border: 0;
@@ -2456,6 +2549,9 @@ form .hs-richtext p {
 		min-width: 100px !important;
 		padding: 10px 15px !important;
 	}
+	.counter-box {
+		padding: 80px 20px;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -2740,6 +2836,10 @@ form .hs-richtext p {
 	.client-div .logo-com:before {
 		content: "";
 		border-bottom: 0;
+	}
+	
+	.res-row-margin-bottom991 {
+		margin-bottom: 30px;
 	}
 }
 

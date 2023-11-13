@@ -18,12 +18,13 @@
       <link rel="stylesheet" type="text/css" href="css/vendor/owl-carousel/owl.theme.css">
 
       
-
-      <!-- Carousel Bootstrap CSS and JavaScript -->
+      <link rel="stylesheet" href="css/vendor/owl-carousel/owl.carousel2.min.css">
+      <link rel="stylesheet" href="css/vendor/owl-carousel/owl.theme.default.min.css">
+      <!-- Carousel Bootstrap CSS and JavaScript 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 
 
       <!-- CUSTOM CSS -->
@@ -160,13 +161,13 @@
 			  </div>
 			</div>
          </div>
-      </section> -->
+      </section> 
 
       
 
       <section class="section-white-bg animate-scroll animate__animated animate__fadeInUp">
 
-         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000">
+         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="images-raack/gif/Home Page Banner1.gif" alt="First slide">
@@ -207,34 +208,56 @@
             });
           </script>
           
-         <!-- <div class="container-fluid p-0">
+          <div class="container-fluid p-0">
             <video src="https://raackdance.com/videos/1.mp4" id="headerSlideVideo" width="100%" height="100%" class="animate__animated animate__slower" data-videos="https://raackdance.com/videos/2.mp4, https://raackdance.com/videos/3.mp4, https://raackdance.com/videos/4.mp4, https://raackdance.com/videos/1.mp4" autoplay></video>
-         </div> -->
+         </div> 
+      </section> -->
+      <section class="animate-scroll" data-animate="animate__animated animate__fadeInUp">
+         <div class="container-fluid p-0">
+            <div class="header-testimonial owl-carousel owl-theme" id="my-carousel">
+               <div class="item">
+                  <img class="d-block w-100" src="images-raack/gif/home-page-banner1.gif" alt="First slide">
+               </div>
+               
+               <div class="item">
+                  <img class="d-block w-100" src="images-raack/gif/home-page-banner2.gif" alt="First slide">
+               </div>
+
+               <div class="item">
+                  <img class="d-block w-100" src="images-raack/gif/home-page-banner3.gif" alt="First slide">
+               </div>
+
+               <div class="item">
+                  <img class="d-block w-100" src="images-raack/gif/home-page-banner4.gif" alt="First slide">
+               </div>
+
+            </div>
+         </div>
       </section>
       <!--================================= SLIDER HEADER END ==========================================-->
       <!--============================= COUNTER AREA START ======================-->
       <section class="section-space section-white-bg animate-scroll" data-animate="animate__animated animate__fadeInUp">
          <div class="container">
             <div class="row rowsafari">
-               <div class="col-lg-3 col-sm-6 col-md-3 col-12 res-text-center res-margin-bottom">
+               <div class="col-lg-3 col-sm-6 col-md-6 col-12 res-text-center res-row-margin-bottom991">
                   <div class="counter-box counter-width">
                      <p class="subtitle"><span class="count-num">19</span><sup>+</sup></p>
                      <h5 class="title-counterup text-capitalize">Dance<br> Studios</h5>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-md-3 col-12 res-text-center res-margin-bottom">
+               <div class="col-lg-3 col-sm-6 col-md-6 col-12 res-text-center res-row-margin-bottom991">
                   <div class="counter-box counter-width">
                      <p class="subtitle"><span class="count-num">100000</span><sup>+</sup></p>
                      <h5 class="title-counterup text-capitalize">Students<br> Trained</h5>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-md-3 col-12 res-text-center res-row-margin-bottom">
+               <div class="col-lg-3 col-sm-6 col-md-6 col-12 res-text-center res-row-margin-bottom">
                   <div class="counter-box counter-width">
                      <p class="subtitle"><span class="count-num">4000</span><sup>+</sup></p>
                      <h5 class="title-counterup text-capitalize">Events<br> Performed</h5>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6 col-md-3 col-12 res-text-center ">
+               <div class="col-lg-3 col-sm-6 col-md-6 col-12 res-text-center ">
                   <div class="counter-box counter-width">
                      <p class="subtitle"><span class="count-num">25</span></p>
                      <h5 class="title-counterup text-capitalize">Years of <br>Dance Expertise</h5>
@@ -563,7 +586,7 @@ observer.observe(document.getElementById('video-section'));
             </div>
             <div class="row rowsafari home-testimonial">
                <div class="col-lg-10 mx-auto">
-                  <div class="team" id="my-carousel">
+                  <div class="owl-carousel owl-theme client-testimonial"> 
                      <div class="item row rowsafari align-items-center test-content testimonial-card">
                         <div class="col-lg-5 col-md-5 tab-res-margin-bot text-center" style="padding-left: 0;">
                            <img src="images-raack/testimonial/mudita-mehta.png" alt="testimonial" class="img-fluid section-margin-bottom">
@@ -686,18 +709,18 @@ observer.observe(document.getElementById('video-section'));
                   </p>
                </div>
                <div class="col-lg-5 offset-1  res-left-mar0">                  
-                  <form action="#" class="form-res" method="post">
+                  <form action="#" class="contact-form" method="post">
                      <div class="form-field">
-                        <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                        <input type="text" name="fname" class="form-input" value="" maxlength="100" placeholder="Name" required autocomplete="off">
                      </div>
 					      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="text" name="phone" class="form-input" value="" placeholder="Mobile No" required autocomplete="off" onkeypress="return isNumber(event)">
+                           <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No" required autocomplete="off">
                         </div>
                      </div>
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="email" name="email" class="form-input" value="" placeholder="Email ID" required autocomplete="off">
+                           <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">
                         </div>
                      </div>     
                      <div class="form-field">
@@ -868,6 +891,8 @@ observer.observe(document.getElementById('video-section'));
       <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
       <!-- BOOTSTRAP -->
       <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+      <!-- JQUERY VALIDATION -->
+      <script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
       <!--JQUERY COUNTER -->
       <script type="text/javascript" src="js/vendor/counter/jquery.counterup.min.js"></script>
       <script type="text/javascript" src="js/vendor/counter/counter-lib.js"></script>
@@ -876,6 +901,7 @@ observer.observe(document.getElementById('video-section'));
       <script type="text/javascript" src="js/vendor/slider/owl-slider.js"></script>
       <!-- THEME JS -->
       <script src="js/vendor/lazyload.min.js"></script>
+      <script src="js/vendor/slider/owl.carousel2.min.js"></script>
       <script type="text/javascript" src="js/vendor/jquery.animateTyping.min.js"></script>
       <script type="text/javascript" src="js/custom/custom.js"></script>
    </body>

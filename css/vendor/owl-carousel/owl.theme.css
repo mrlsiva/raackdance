@@ -48,6 +48,13 @@
   width: 100%;
   text-align: left;
 }
+
+
+.header-testimonial .owl-prev {
+	float: none;
+  width: auto;
+  text-align: left;
+}
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{

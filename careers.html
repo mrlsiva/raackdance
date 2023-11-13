@@ -582,20 +582,20 @@
                   <h4 class="section-margin-bottom text-white"> Apply<span class="academy-raack"> Today</span></h4>
                   <p class="section-margin-bottom res-bot10">To apply or inquire about career opportunities, please submit your resume and a cover letter detailing your qualifications, experience, and why you would be a great fit for our team. We can't wait to hear from you!</p>
                </div> 
-            <form action="#" class="form-res" method="post" style="margin-top: 30px;">
+            <form action="#" class="contact-form" method="post" style="margin-top: 30px;">
                <div class="form-field">
-                  <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                  <input type="text" name="fname" class="form-input" value="" maxlength="100" placeholder="Name" required autocomplete="off">
                </div>
                <div class="form-field">
                   <div class="form-textarea-top-spacing">
-                     <input type="email" name="email" class="form-input" value="" placeholder="Email Address" required autocomplete="off">
+                     <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No" required autocomplete="off">
                   </div>
                </div>
                <div class="form-field">
                   <div class="form-textarea-top-spacing">
-                     <input type="text" name="phone" class="form-input" value="" placeholder="Mobile Number" required autocomplete="off" onkeypress="return isNumber(event)">
+                     <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">
                   </div>
-               </div>
+               </div> 
                <div class="form-field">
                   <div class="form-textarea-top-spacing">
                      <select name="course" id="course">
@@ -743,37 +743,37 @@
             </div>
             <div class="row rowsafari align-items-center">
                <div class="col-lg-6 col-sm-12 col-md-12 col-12 mx-auto">
-                  <form action="#" class="form-res" method="post" style="margin-top: 30px;">
+                  <form action="#" class="contact-form" method="post">
                      <div class="form-field">
-                        <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                        <input type="text" name="fname" class="form-input" value="" maxlength="100" placeholder="Name" required autocomplete="off">
                      </div>
-                     <div class="form-field">
+					      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="email" name="email" class="form-input" value="" placeholder="Email Address" required autocomplete="off">
+                           <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No"  required autocomplete="off">
                         </div>
                      </div>
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="text" name="phone" class="form-input" value="" placeholder="Mobile Number" required autocomplete="off" onkeypress="return isNumber(event)">
+                           <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">
                         </div>
-                     </div>
+                     </div>     
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <select name="course" id="course">
-                              <option value="course-insterested-in" selected disabled>Position</option>
+                              <option value="course-choreolab">Choreolab</option>
                               <hr>
-                              <option value="course-insterested-in">Instructor</option>
+                              <option value="course-dance-fitness">Dance Fitness</option>
                               <hr>
-                              <option value="course-insterested-in">Counsellor</option>
+                              <option value="course-film-covers">Flim Covers</option>
                               <hr>
-                              <option value="course-insterested-in">Branch Manager</option>
+                              <option value="course-just-dance">Just Dance</option>
                               <hr>
-                              <option value="course-insterested-in">Designer</option>
-                              <hr>
-                              <option value="course-insterested-in">Editor</option>
+                              <option value="course-little-legends">Little Legends</option>
+                              <hr>                              
+                              <option value="course-rdeb-in">RDEP</option>
                            </select>
                         </div>
-                     </div>
+                     </div>               
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <select name="course" id="course">
@@ -924,6 +924,8 @@
       <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
       <!-- BOOTSTRAP -->
       <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+      <!-- JQUERY VALIDATION -->
+      <script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
       <!--JQUERY COUNTER -->
       <script type="text/javascript" src="js/vendor/counter/jquery.counterup.min.js"></script>
       <script type="text/javascript" src="js/vendor/counter/counter-lib.js"></script>
@@ -931,7 +933,8 @@
       <script type="text/javascript" src="js/vendor/slider/owl-carousel.min.js"></script>
       <script type="text/javascript" src="js/vendor/slider/owl-slider.js"></script>
       <!-- THEME JS -->
-      <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+      <script src="js/vendor/lazyload.min.js"></script>
+      <script src="js/vendor/slider/owl.carousel2.min.js"></script>
       <script type="text/javascript" src="js/vendor/jquery.animateTyping.min.js"></script>
       <script type="text/javascript" src="js/custom/custom.js"></script>
    </body>

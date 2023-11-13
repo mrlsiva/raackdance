@@ -163,14 +163,14 @@ $(document).ready(function () {
 		});        
 	}
 	
-	/* Home Page - Header Slider Video */
+	/* Home Page - Header Slider Video
 	if( $('#headerSlideVideo').length ){ 
 		var myvid = document.getElementById('headerSlideVideo');
 		/* var myvids = [
 		  "https://raackdance.com/videos/2.mp4", 
 		  "https://raackdance.com/videos/3.mp4",
 		  "https://raackdance.com/videos/4.mp4"
-		  ]; */
+		  ]; 
 		  
 		 var myvids = []; 
 		 var myvids2 = myvid.getAttribute('data-videos').split(",");
@@ -194,17 +194,63 @@ $(document).ready(function () {
 		  myvid.classList.add("animate__fadeIn"); 
 		  myvid.play();
 		});
+	} */
+ 
+	   //CONTACT FORM VALIDATION	
+	   if ($('.contact-form').length) {
+        $('.contact-form').each(function() {
+            $(this).validate({
+                errorClass: 'error',
+                submitHandler: function(form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "mail/mail.php",
+                        data: $(form).serialize(),
+                        success: function(data) {
+							console.log(data);
+                            if (data) {
+								$(form)[0].reset();
+                                $('.successMessage').html('Mail Sent Successfully!!!');
+                                $('.successMessage').show();
+                                $('.successMessage').delay(3000).fadeOut();
+                            } else {
+                                $('.failMessage').html(data);
+                                $('.failMessage').show();
+                                $('.failMessage').delay(3000).fadeOut();
+                            }
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                            $('.failMessage').html(textStatus);
+                            $('.failMessage').show();
+                            $('.failMessage').delay(3000).fadeOut();
+                        }
+                    });
+                }
+            });
+        });
+    }
+
+	$('.phonenumber').each(function(e) {
+	  //called when key is pressed in textbox
+	  $(this).keypress(function(e) {
+		//if the letter is not digit then display error and don't type anything
+		if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+		   return false;
+	   }
+	  }); 
+	});  
+	  
+/* view class scedule action */
+	if ($('.faq').length) {
+	const question = document.querySelector('.faq .question');
+	const answer = document.querySelector('.faq .answer');
+
+	question.addEventListener('click', () => {
+		if (answer.style.display === 'none' || answer.style.display === '') {
+			answer.style.display = 'block';
+		} else {
+			answer.style.display = 'none';
+		}
+	});
 	}
 });
-
-/* view class scedule action */
-const question = document.querySelector('.faq .question');
-   const answer = document.querySelector('.faq .answer');
-
-   question.addEventListener('click', () => {
-       if (answer.style.display === 'none' || answer.style.display === '') {
-           answer.style.display = 'block';
-       } else {
-           answer.style.display = 'none';
-       }
-   });
