@@ -1193,21 +1193,20 @@
                   <p class="section-padding-bottom">Embark on your dance journey with Raack Dance Academy and discover the transformative power of movement-based art. Join us in celebrating the uniqueness of every individual through the powerful expression of dance. Enroll in your desired course today and let your dance story unfold.</p>
                </div>
                <div class="col-lg-5 offset-1  res-left-mar0"> 
-                  <form action="#" class="form-res" method="post">
+                  <form action="#" class="contact-form" method="post">
                      <div class="form-field">
-                        <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                        <input type="text" name="fname" class="form-input" value="" maxlength="100" placeholder="Name" required autocomplete="off">
                      </div>
-                     <div class="form-field">
+					      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="email" name="email" class="form-input" value="" placeholder="Email Address" required autocomplete="off">
+                           <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No" required autocomplete="off">
                         </div>
                      </div>
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="text" name="phone" class="form-input" value="" placeholder="Mobile Number" required autocomplete="off" onkeypress="return isNumber(event)">
+                           <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">
                         </div>
-                     </div>
-                           
+                     </div>            
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <select name="course" id="course">
@@ -1219,7 +1218,7 @@
                               <hr>
                               <option value="Velachery">Velachery</option>
                               <hr>
-                              <option value="Perungalathur">Perungalathur</option>
+                              <option value="Perungalathur" selected>Perungalathur</option>
                               <hr>
                               <option value="Mogappair">Mogappair</option>
                               <hr>
@@ -1356,6 +1355,8 @@
    <!--=============================== FOOTER AREA END ========================-->
       <!-- JQUERY LIBRARY -->
       <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+       <!-- JQUERY VALIDATION -->
+     <script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
       <!-- BOOTSTRAP -->
       <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
       <!--JQUERY COUNTER -->

@@ -285,6 +285,13 @@ iframe {
 	float: left;
 }
 
+.floral-space {
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #363636;
+}
+
 .section-space {
 	padding-top: 80px;
 	padding-bottom: 80px;

@@ -239,7 +239,7 @@ $(document).ready(function () {
 	   }
 	  }); 
 	});  
-	  
+  
 /* view class scedule action */
 	if ($('.faq').length) {
 	const question = document.querySelector('.faq .question');

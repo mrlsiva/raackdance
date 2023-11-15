@@ -140,7 +140,7 @@
       </nav>
       <!--======================================= NAVIGATION END ==============================-->
       <!--================================= HEADER START ==========================================-->
-      <section class="animate-scroll studio-bg-img" data-animate="animate__animated animate__fadeInUp" style="background-image: url(images-raack/studio-bg-image/Ramapuram.png);">
+      <section class="animate-scroll studio-bg-img" data-animate="animate__animated animate__fadeInUp" style="background-image: url(images-raack/studio-bg-image/Saidapet.png);">
 		   <div class="container">
 			  <div class="text-right">
 				 <h1 style="color: #ffffff;" Class="font-weight400">SAIDAPET</span></h1>
@@ -930,21 +930,20 @@
                   <p class="section-padding-bottom">Embark on your dance journey with Raack Dance Academy and discover the transformative power of movement-based art. Join us in celebrating the uniqueness of every individual through the powerful expression of dance. Enroll in your desired course today and let your dance story unfold.</p>
                </div>
                <div class="col-lg-5 offset-1  res-left-mar0"> 
-                  <form action="#" class="form-res" method="post">
+                  <form action="#" class="contact-form" method="post">
                      <div class="form-field">
-                        <input type="text" name="fname" class="form-input" value="" placeholder="Name" required autocomplete="off">
+                        <input type="text" name="fname" class="form-input" value="" maxlength="100" placeholder="Name" required autocomplete="off">
                      </div>
-                     <div class="form-field">
+					      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="email" name="email" class="form-input" value="" placeholder="Email Address" required autocomplete="off">
+                           <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No" required autocomplete="off">
                         </div>
                      </div>
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
-                           <input type="text" name="phone" class="form-input" value="" placeholder="Mobile Number" required autocomplete="off" onkeypress="return isNumber(event)">
+                           <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">
                         </div>
-                     </div>
-                                          
+                     </div>            
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <select name="course" id="course">
@@ -974,7 +973,7 @@
                               <hr>
                               <option value="Keelkattalai">Keelkattalai</option>
                               <hr>
-                              <option value="Saidapet">Saidapet</option>
+                              <option value="Saidapet" selected>Saidapet</option>
                               <hr>
                               <option value="Pallikaranai">Pallikaranai</option>
                               <hr>
@@ -1095,6 +1094,8 @@
       <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
       <!-- BOOTSTRAP -->
       <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+      <!-- JQUERY VALIDATION -->
+     <script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
       <!--JQUERY COUNTER -->
       <script type="text/javascript" src="js/vendor/counter/jquery.counterup.min.js"></script>
       <script type="text/javascript" src="js/vendor/counter/counter-lib.js"></script>
