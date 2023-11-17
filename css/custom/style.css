@@ -3037,11 +3037,11 @@ form .hs-richtext p {
 }
 .our-team img {
 	position: relative;
-	bottom:0;
+	bottom:-40px;
 	transition: all 1s ease-in-out;
 }
 .our-team:hover img {
-	bottom: 40px;
+	bottom: 0px;
 	transition: all 1s ease-in-out;
 	transition-timing-function: ease-in-out;
 }
