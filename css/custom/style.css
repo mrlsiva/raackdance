@@ -3090,3 +3090,45 @@ form .hs-richtext p {
  #course option{
 	font-family:'Montserrat';
  }
+
+ 			/* table style*/
+ 			.calendar .item.active
+              {
+                  background-color: #D3104D;
+              }
+          
+              .calendar .item
+              {
+                  border-left-color: #D3104D;
+              }
+          
+              .calendar .item .badge
+              {
+                  color: #D3104D;
+              }
+          
+              .calendar .item .time p
+              {
+                  color: #D3104D;
+              }
+          
+              .calendar .item.active .time p
+              {
+                  color: white;
+              }
+          
+              .calendar .item .lector ul li
+              {
+                  color: #D3104D;
+              }
+          
+              .calendar .item.active .lector ul li
+              {
+                  color: white;
+              }
+          
+              .calendar .item.active .cta a
+              {
+                  color: #D3104D;
+              }
+			  /* end table style*/
