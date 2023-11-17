@@ -1415,6 +1415,21 @@ input::placeholder {
 	/* Firefox */
 }
 
+.mobile-input-container {
+	display: flex;
+  }
+
+  #countryCode
+   {
+	padding: 8px;
+	margin-right: 10px;
+	align-items: center;
+  }
+
+  #countryCode {
+	width: 50px; 
+  }
+
 /*============================== 13.FORM AREA END ===========================*/
 
 /*============================== 14.CONTACT PAGE AREA START ===========================*/
