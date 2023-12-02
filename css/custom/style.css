@@ -799,6 +799,12 @@ background-repeat: no-repeat;
   min-width: 100%; 
   min-height: 100%;
 }
+.rounded-box {
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+	padding: 10px; /* Adjust padding as needed */
+	border-radius: 20px; /* Adjust border-radius for a rounded shape */
+	display: inline-block; /* Prevent the background from stretching full width */
+  }
 /*======================================== 5.HEADER END ==============================*/
 
 /*=============================== 6.COUNTER AREA START ============================*/
