@@ -842,11 +842,15 @@
                         <input type="text" name="fname" class="form-input" value="" maxlength="50" placeholder="Name" required autocomplete="off">
                      </div>
 					      <div class="form-field">
-                        <div class="form-textarea-top-spacing mobile-input-container">
-                           <input type="text" id="countryCode" placeholder="Country Code"  value="+91" readonly>
-                           <input type="text" name="phone" class="form-input phonenumber" value=""  placeholder="Mobile No" required autocomplete="off" maxlength="10">
-                        </div>
-                     </div>
+                        <div class="mobile-input-container">
+                            <div class="input-container">
+                                <input type="text" id="countryCode" placeholder="Country Code" value="+91" readonly>
+                            </div>
+                            <div class="input-container ph-container">
+                                <input type="text" name="phone" class="form-input" value="" placeholder="Mobile No" required autocomplete="off" maxlength="10">
+                            </div>
+                        </div> 
+                    </div>
                      <div class="form-field">
                         <div class="form-textarea-top-spacing">
                            <input type="email" name="email" class="form-input" value="" id="email" placeholder="Email ID" required autocomplete="off">

@@ -1430,11 +1430,28 @@ input::placeholder {
 	padding: 8px;
 	margin-right: 10px;
 	align-items: center;
-  }
-
-  #countryCode {
 	width: 50px; 
   }
+
+  .mobile-input-container {
+    display: flex;
+}
+
+.input-container {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.ph-container {
+	width: 100%;
+}
+
+
+
+
+
+  
 
 /*============================== 13.FORM AREA END ===========================*/
 
@@ -2291,6 +2308,16 @@ form .hs-richtext p {
 		font-size: 30px;
 		line-height: 40px;
 	}
+	.text-right h1 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.rounded-box {
+		background-color: rgba(0, 0, 0, 0.5); 
+		padding: 5px; 
+		border-radius: 10px; 
+		display: inline-block; 
+	  }
 
 	h2 {
 		font-size: 25px;
@@ -2344,8 +2371,9 @@ form .hs-richtext p {
 		padding: 140px 0;
 	}
 
+	
 	.section-padding-bottom {
-		padding-bottom: 20px;
+		padding-bottom: 0px;
 	}
 
 	.phylosophy-ul-img {
@@ -2395,6 +2423,8 @@ form .hs-richtext p {
 		line-height: 22px;
 		padding: 5px 20px;
 		min-width: 150px;
+		margin-bottom: 15PX;
+		
 	}
 
 	.transparent2-btn svg,
