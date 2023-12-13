@@ -1427,10 +1427,9 @@ input::placeholder {
 
   #countryCode
    {
-	padding: 8px;
-	margin-right: 10px;
+	
 	align-items: center;
-	width: 50px; 
+	width: 80px; 
   }
 
   .mobile-input-container {
@@ -1483,7 +1482,10 @@ input::placeholder {
 	position: absolute;
 	bottom: 30px;
 	padding: 0 30px;
+	margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 footer .last-ul ul li {
 	text-align: left;
 }
@@ -2294,10 +2296,30 @@ form .hs-richtext p {
 	.single-recreate-content .gallery-btns {
 		display: table;
 	}
+	
+}
+
+@media only screen and (max-width: 640px) {
+	.hst-pop-modal-wrapper::before {
+		content: none;
+	}
 }
 
 @media only screen and (max-width: 575px) {
-	
+	.form-contact-content {
+		position: absolute;
+		top: 10px;
+		bottom: 0px;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 50px;
+		
+	}
+	.form-contact-content p{
+		margin-top: 5px;
+	 font-size: 15px;
+	 text-align: justify;
+	 line-height: 20px;
+	}
 	
 .client-logo-slider .course-ul-img-right {
 	right: inherit;
