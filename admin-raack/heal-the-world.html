@@ -46,8 +46,8 @@
             <ul>
                 <li><a href="index.html"><i class="ti-home"></i> Index Page <span class="badge badge-primary">8</span> <span class="sidebar-collapse-icon"></span></a></li>
                 <li><a href="studio-index.html" ><i class="ti-home"></i> Studio Page <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
-                <li><a href="event-galleries-index.html" ><i class="ti-home"></i> Event & Gelleries<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
-                <li class="active"><a href="courses-index.html" ><i class="ti-home"></i> Courses<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
+                <li class="active"><a href="event-galleries-index.html" ><i class="ti-home"></i> Event & Gelleries<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
+                <li><a href="courses-index.html" ><i class="ti-home"></i> Courses<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
                 <li><a href="fta-index.html" ><i class="ti-home"></i> FTA Page<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
                 <li><a href="contact-index.html" ><i class="ti-home"></i> Contact Page<span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon"></span></a></li>
             </ul>
@@ -121,6 +121,20 @@
                                     <div class="menu-upload-form">
                                         <form class="form-horizontal">
                                             <div class="form-group">
+                                                <label class="col-sm-2 control-label">Upload Image</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-control file-input dark-browse-input-box">
+                                                        <label for="inputFile-2">
+                                                                <span class="btn btn-danger dark-input-button">
+                                                                    <input type="file" id="inputFile-2" onchange="this.parentNode.parentNode.nextElementSibling.value = this.value">
+                                                                    <i class="fa fa-file-archive-o"></i>
+                                                                </span>
+                                                        </label>
+                                                        <input class="file-name input-flat" type="text" readonly="readonly" placeholder="Browse Files">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="col-sm-2 control-label">Video Link</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" placeholder="Paste your video link">
@@ -140,7 +154,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Upload</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -154,7 +168,7 @@
                     <div class="row">
                         <div class=" col-lg-12">
                             <div class="card-header">
-                                <h4>Heal the World Logo</h4>
+                                <h4>Event Logo</h4>
                             </div>
                             <div class="card alert">
                                 <div class="card-body">
@@ -193,8 +207,14 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
+                                                <label class="col-sm-2 control-label">Description</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Upload</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -209,7 +229,7 @@
                     <div class="row">
                         <div class=" col-lg-12">
                             <div class="card-header">
-                                <h4>Heal the World Event Details</h4>
+                                <h4>Event Details</h4>
                             </div>
                             <div class="card alert">
                                 <div class="card-body">
@@ -222,14 +242,14 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Avenue</label>
+                                                <label class="col-sm-2 control-label">Venue</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" placeholder="Type your event avenue">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Upload</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -255,7 +275,7 @@
                     <div class="row">
                         <div class=" col-lg-12">
                             <div class="card-header">
-                                <h4>Heal the World participants</h4>
+                                <h4>Participants</h4>
                             </div>
                             <div class="card alert">
                                 <div class="card-body">
@@ -281,7 +301,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Upload</button>
+                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -293,7 +313,397 @@
                         
                         </div>
                     </div>
-                   
+                    <div class="row">
+                        <div class=" col-lg-12">
+                            <div class="card-header">
+                                <h4>Why</h4>
+                            </div>
+                            <div class="card alert">
+                                <div class="card-body">
+                                    <div class="menu-upload-form">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Heading 1</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" placeholder="Enter heading">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Description 1</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Heading 2</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" placeholder="Enter heading">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Description 2</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Heading 3</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" placeholder="Enter heading">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Description 3</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /# card -->
+                        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Competitions Categories</h4>
+                            <div class="card alert">
+                                <div class="card-header pr">
+                                    <div class="card-header-right-icon">
+                                        <ul>
+                                            <li class="doc-link" ><a href="#"><i class="ti-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>Competitions Name</th>
+                                                    <th>Status</th>
+                                                    <th>Url</th>
+                                                    <th>Position</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>Little Legends (Ages 03-06)</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Active
+                                                            <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">In Active</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        www.raackdance.com/index.html
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="openForm"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div id="popupForm" class="popup">
+                            <div class="popup-content col-lg-8">
+                                
+                                    <div class="card alert">
+                                        <div class="card-header">
+                                            <h4>Menu Upload</h4>
+                                            <div class="card-header-right-icon">
+                                                <ul>
+                                                    <span><button onclick="closeForm()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="menu-upload-form">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Competitions Name</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type your Competitions Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /# card -->
+                                
+                            </div>
+                        </div>
+                        <script>
+                            // Reusable function to close the popup
+                            function closeForm() {
+                                document.getElementById('popupForm').style.display = 'none';
+                            }
+                        
+                            // JavaScript to show/hide the popup form
+                            document.getElementById('openForm').addEventListener('click', function () {
+                                document.getElementById('popupForm').style.display = 'block';
+                            });
+                        </script>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Judging Criteria</h4>
+                            <div class="card alert">
+                                <div class="card-header pr">
+                                    <div class="card-header-right-icon">
+                                        <ul>
+                                            <li class="doc-link" ><a href="#"><i class="ti-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>Criteria</th>
+                                                    <th>Status</th>
+                                                    <th>Url</th>
+                                                    <th>Position</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>Artistic Interpretation</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Active
+                                                            <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#">In Active</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        www.raackdance.com/index.html
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="openForm2"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div id="popupForm2" class="popup">
+                            <div class="popup-content col-lg-8">
+                                
+                                    <div class="card alert">
+                                        <div class="card-header">
+                                            <h4>Menu Upload</h4>
+                                            <div class="card-header-right-icon">
+                                                <ul>
+                                                    <span><button onclick="closeForm2()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="menu-upload-form">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Criteria</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type your Criteria">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /# card -->
+                                
+                            </div>
+                        </div>
+                        <script>
+                            // Reusable function to close the popup
+                            function closeForm2() {
+                                document.getElementById('popupForm2').style.display = 'none';
+                            }
+                        
+                            // JavaScript to show/hide the popup form
+                            document.getElementById('openForm2').addEventListener('click', function () {
+                                document.getElementById('popupForm2').style.display = 'block';
+                            });
+                        </script>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-header">
+                                <h4>Galleries</h4>
+                            </div>
+                            <div class="card alert">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>Image</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                    <th>Url</th>
+                                                    <th>Position</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label><img src="assets/images/avatar/2.jpg"></td>
+                                                    
+                                                    <td>
+                                                       1.jpg
+                                                    </td>
+                                                   
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>Active</option>
+                                                            <option>In Active</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        www.raackdance.com/index.html
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="openForm1"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div id="popupForm1" class="popup">
+                            <div class="popup-content col-lg-8">
+                                
+                                    <div class="card alert">
+                                        <div class="card-header">
+                                            <h4>Menu Upload</h4>
+                                            <div class="card-header-right-icon">
+                                                <ul>
+                                                    <span><button onclick="closeForm1()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="menu-upload-form">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Upload Image</label>
+                                                        <div class="col-sm-10">
+                                                            <div class="form-control file-input dark-browse-input-box">
+                                                                <label for="inputFile-2">
+                                                                        <span class="btn btn-danger dark-input-button">
+                                                                            <input type="file" id="inputFile-2" onchange="this.parentNode.parentNode.nextElementSibling.value = this.value">
+                                                                            <i class="fa fa-file-archive-o"></i>
+                                                                        </span>
+                                                            </label>
+                                                                <input class="file-name input-flat" type="text" readonly="readonly" placeholder="Browse Files">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">File Name</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type your image name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Url</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Paste your url">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /# card -->
+                                
+                            </div>
+                        </div>
+                        <script>
+                            // Reusable function to close the popup
+                            function closeForm1() {
+                                document.getElementById('popupForm1').style.display = 'none';
+                            }
+                        
+                            // JavaScript to show/hide the popup form
+                            document.getElementById('openForm1').addEventListener('click', function () {
+                                document.getElementById('popupForm1').style.display = 'block';
+                            });
+                        </script>
+
+                    </div>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="footer">
