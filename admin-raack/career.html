@@ -28,28 +28,23 @@
     <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/lib/unix.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-   
-
-<!-- Bootstrap-datepicker CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-<!-- Bootstrap-datepicker JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </head>
 
 <body>
 
-     <!-- sidebar -->
+   <!-- sidebar -->
    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
     <div class="nano">
         <div class="nano-content">
             <ul>
                 <li><a href="index.html"><i class="ti-home"></i> Index Page  <span class="sidebar-collapse-icon"></span></a></li>
                 <li><a href="studio-index.html" ><i class="ti-home"></i> Studio Page  <span class="sidebar-collapse-icon"></span></a></li>
-                <li class="active"><a href="event-galleries-index.html" ><i class="ti-home"></i> Event & Gelleries <span class="sidebar-collapse-icon"></span></a></li>
-                <li><a href="courses-index.html" ><i class="ti-home"></i> Courses <span class="sidebar-collapse-icon"></span></a></li>
+                <li><a href="event-galleries.html" ><i class="ti-home"></i> Event & Gelleries <span class="sidebar-collapse-icon"></span></a></li>
+                <li><a href="courses.html" ><i class="ti-home"></i> Courses <span class="sidebar-collapse-icon"></span></a></li>
                 <li><a href="fta-index.html" ><i class="ti-home"></i> FTA Page <span class="sidebar-collapse-icon"></span></a></li>
-                <li><a href="contact-index.html" ><i class="ti-home"></i> Contact Page <span class="sidebar-collapse-icon"></span></a></li>
+                <li class="active"><a href="career.html" ><i class="ti-home"></i>Career Page <span class="sidebar-collapse-icon"></span></a></li>
+                <li><a href="franchise.html" ><i class="ti-home"></i>Franchise <span class="sidebar-collapse-icon"></span></a></li>
+                <li><a href="contact.html" ><i class="ti-home"></i> Contact Page <span class="sidebar-collapse-icon"></span></a></li>
             </ul>
         </div>
     </div>
@@ -88,27 +83,6 @@
     <div class="content-wrap">
         <div class="main">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 p-r-0 title-margin-right">
-                        <div class="page-header">
-                            <div class="page-title">
-                                <h1>Hello, <span>Welcome Here</span></h1>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /# column -->
-                    <div class="col-lg-4 p-l-0 title-margin-left">
-                        <div class="page-header">
-                            <div class="page-title">
-                                <ol class="breadcrumb text-right">
-                                    <li><a href="#">Dashboard</a></li>
-                                    <li class="active">Home</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /# column -->
-                </div>
                 <!-- /# row -->
                 <div id="main-content">
                     <div class="row">
@@ -120,60 +94,7 @@
                                 <div class="card-body">
                                     <div class="menu-upload-form">
                                         <form class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Upload Image</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-control file-input dark-browse-input-box">
-                                                        <label for="inputFile-2">
-                                                                <span class="btn btn-danger dark-input-button">
-                                                                    <input type="file" id="inputFile-2" onchange="this.parentNode.parentNode.nextElementSibling.value = this.value">
-                                                                    <i class="fa fa-file-archive-o"></i>
-                                                                </span>
-                                                        </label>
-                                                        <input class="file-name input-flat" type="text" readonly="readonly" placeholder="Browse Files">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Video Link</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Paste your video link">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Event Name</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Enter Event Name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Banner Heading</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="EnterBanner Heading">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /# card -->
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" col-lg-12">
-                            <div class="card-header">
-                                <h4>Event Logo</h4>
-                            </div>
-                            <div class="card alert">
-                                <div class="card-body">
-                                    <div class="menu-upload-form">
-                                        <form class="form-horizontal">
+                                            
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">Upload Image</label>
                                                 <div class="col-sm-10">
@@ -189,27 +110,21 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">File Name</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Type your image name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
                                                 <label class="col-sm-2 control-label">Url</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" placeholder="Paste your url">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Season</label>
+                                                <label class="col-sm-2 control-label">Heading Black</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Enter Your current season">
+                                                    <input type="text" class="form-control" placeholder="Type your heading">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Description</label>
+                                                <label class="col-sm-2 control-label">Heading Red</label>
                                                 <div class="col-sm-10">
-                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                    <input type="text" class="form-control" placeholder="Type your heading">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -221,7 +136,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <!-- /# card -->
                         
                         </div>
@@ -229,74 +143,28 @@
                     <div class="row">
                         <div class=" col-lg-12">
                             <div class="card-header">
-                                <h4>Event Details</h4>
+                                <h4>Join Us On This</h4>
                             </div>
                             <div class="card alert">
                                 <div class="card-body">
                                     <div class="menu-upload-form">
                                         <form class="form-horizontal">
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Date</label>
-                                                <div class="col-sm-10">
-                                                    <input type="date" class="form-control" placeholder="Type your event date">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Venue</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Type your event avenue">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        
-                                        
-                                        <script>
-                                            $(document).ready(function () {
-                                                $('#datepicker').datepicker({
-                                                    format: 'mm/dd/yyyy', // You can customize the date format
-                                                    autoclose: true
-                                                });
-                                            });
-                                        </script>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- /# card -->
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" col-lg-12">
-                            <div class="card-header">
-                                <h4>Participants</h4>
-                            </div>
-                            <div class="card alert">
-                                <div class="card-body">
-                                    <div class="menu-upload-form">
-                                        <form class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Heading</label>
+                                                <label class="col-sm-2 control-label">Heading Black</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" placeholder="Type your Heading">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Counts</label>
+                                                <label class="col-sm-2 control-label">Heading Red</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Type your Counts">
+                                                    <input type="text" class="form-control" placeholder="Type your heading">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">Description</label>
                                                 <div class="col-sm-10">
-                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                    <textarea class="form-control" rows="3" placeholder="Type your description"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -307,293 +175,31 @@
                                         </form>
                                     </div>
                                 </div>
+                            </div>
+                            <!-- /# card -->
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-header">
+                                <h4>Team Say</h4>
                             </div>
                             
-                            <!-- /# card -->
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" col-lg-12">
-                            <div class="card-header">
-                                <h4>Why</h4>
-                            </div>
                             <div class="card alert">
-                                <div class="card-body">
-                                    <div class="menu-upload-form">
-                                        <form class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Heading 1</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Enter heading">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Description 1</label>
-                                                <div class="col-sm-10">
-                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Heading 2</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Enter heading">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Description 2</label>
-                                                <div class="col-sm-10">
-                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Heading 3</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" placeholder="Enter heading">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 control-label">Description 3</label>
-                                                <div class="col-sm-10">
-                                                    <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                                <div class="card-header-right-icon">
+                                    <ul>
+                                        <li class="doc-link" ><a href="#"><i class="ti-plus"></i></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <!-- /# card -->
-                        
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Competitions Categories</h4>
-                            <div class="card alert">
-                                <div class="card-header pr">
-                                    <div class="card-header-right-icon">
-                                        <ul>
-                                            <li class="doc-link" ><a href="#"><i class="ti-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table student-data-table m-t-20">
-                                            <thead>
-                                                <tr>
-                                                    <th><label><input type="checkbox" value=""></label>Competitions Name</th>
-                                                    <th>Status</th>
-                                                    <th>Url</th>
-                                                    <th>Position</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><label><input type="checkbox" value=""></label>Little Legends (Ages 03-06)</td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Active
-                                                            <span class="caret"></span></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="#">In Active</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        www.raackdance.com/index.html
-                                                    </td>
-                                                    <td>
-                                                        <select class="form-control">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <span id="openForm"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
-                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /# column -->
-                        <div id="popupForm" class="popup">
-                            <div class="popup-content col-lg-8">
-                                
-                                    <div class="card alert">
-                                        <div class="card-header">
-                                            <h4>Menu Upload</h4>
-                                            <div class="card-header-right-icon">
-                                                <ul>
-                                                    <span><button onclick="closeForm()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="menu-upload-form">
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Competitions Name</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control" placeholder="Type your Competitions Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /# card -->
-                                
-                            </div>
-                        </div>
-                        <script>
-                            // Reusable function to close the popup
-                            function closeForm() {
-                                document.getElementById('popupForm').style.display = 'none';
-                            }
-                        
-                            // JavaScript to show/hide the popup form
-                            document.getElementById('openForm').addEventListener('click', function () {
-                                document.getElementById('popupForm').style.display = 'block';
-                            });
-                        </script>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Judging Criteria</h4>
-                            <div class="card alert">
-                                <div class="card-header pr">
-                                    <div class="card-header-right-icon">
-                                        <ul>
-                                            <li class="doc-link" ><a href="#"><i class="ti-plus"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table student-data-table m-t-20">
-                                            <thead>
-                                                <tr>
-                                                    <th><label><input type="checkbox" value=""></label>Criteria</th>
-                                                    <th>Status</th>
-                                                    <th>Url</th>
-                                                    <th>Position</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><label><input type="checkbox" value=""></label>Artistic Interpretation</td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Active
-                                                            <span class="caret"></span></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="#">In Active</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        www.raackdance.com/index.html
-                                                    </td>
-                                                    <td>
-                                                        <select class="form-control">
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <span id="openForm2"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
-                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /# column -->
-                        <div id="popupForm2" class="popup">
-                            <div class="popup-content col-lg-8">
-                                
-                                    <div class="card alert">
-                                        <div class="card-header">
-                                            <h4>Menu Upload</h4>
-                                            <div class="card-header-right-icon">
-                                                <ul>
-                                                    <span><button onclick="closeForm2()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="menu-upload-form">
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Criteria</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control" placeholder="Type your Criteria">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /# card -->
-                                
-                            </div>
-                        </div>
-                        <script>
-                            // Reusable function to close the popup
-                            function closeForm2() {
-                                document.getElementById('popupForm2').style.display = 'none';
-                            }
-                        
-                            // JavaScript to show/hide the popup form
-                            document.getElementById('openForm2').addEventListener('click', function () {
-                                document.getElementById('popupForm2').style.display = 'block';
-                            });
-                        </script>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card-header">
-                                <h4>Galleries</h4>
-                            </div>
-                            <div class="card alert">
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table student-data-table m-t-20">
                                             <thead>
                                                 <tr>
                                                     <th><label><input type="checkbox" value=""></label>Image</th>
-                                                    <th>Name</th>
+                                                    <th>Person Name</th>
                                                     <th>Status</th>
                                                     <th>Url</th>
                                                     <th>Position</th>
@@ -604,10 +210,7 @@
                                                 <tr>
                                                     <td><label><input type="checkbox" value=""></label><img src="assets/images/avatar/2.jpg"></td>
                                                     
-                                                    <td>
-                                                       1.jpg
-                                                    </td>
-                                                   
+                                                    <td>Abirami</td>
                                                     <td>
                                                         <select class="form-control">
                                                             <option>Active</option>
@@ -653,7 +256,7 @@
                                             <div class="menu-upload-form">
                                                 <form class="form-horizontal">
                                                     <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Upload Image</label>
+                                                        <label class="col-sm-2 control-label"> Upload Image</label>
                                                         <div class="col-sm-10">
                                                             <div class="form-control file-input dark-browse-input-box">
                                                                 <label for="inputFile-2">
@@ -676,6 +279,12 @@
                                                         <label class="col-sm-2 control-label">Url</label>
                                                         <div class="col-sm-10">
                                                             <input type="text" class="form-control" placeholder="Paste your url">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -704,6 +313,258 @@
                         </script>
 
                     </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-header">
+                                <h4>Positions Available</h4>
+                            </div>
+                            <div class="card alert">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>Position Name</th>
+                                                    <th>Time</th>
+                                                    <th>Status</th>
+                                                    <th>Url</th>
+                                                    <th>Position</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>Instructor</td>
+                                                    
+                                                    <td>
+                                                       Part Time
+                                                    </td>
+                                                   
+                                                   <td>
+                                                        <select class="form-control">
+                                                            <option>Active</option>
+                                                            <option>In Active</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        www.raackdance.com/index.html
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="openForm4"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div id="popupForm4" class="popup">
+                            <div class="popup-content col-lg-8">
+                                
+                                    <div class="card alert">
+                                        <div class="card-header">
+                                            <h4>Support & Benefits</h4>
+                                            <div class="card-header-right-icon">
+                                                <ul>
+                                                    <span><button onclick="closeForm4()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="menu-upload-form">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Position Name</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type your Position Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Time</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type Your time">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Requirements Heading</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type Your Heading">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Requirements Description</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /# card -->
+                                
+                            </div>
+                        </div>
+                        <script>
+                            // Reusable function to close the popup
+                            function closeForm4() {
+                                document.getElementById('popupForm4').style.display = 'none';
+                            }
+                        
+                            // JavaScript to show/hide the popup form
+                            document.getElementById('openForm4').addEventListener('click', function () {
+                                document.getElementById('popupForm4').style.display = 'block';
+                            });
+                        </script>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-header">
+                                <h4>Your Career At</h4>
+                            </div>
+                            <div class="card alert">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>Number</th>
+                                                    <th>Heading</th>
+                                                    <th>Status</th>
+                                                    <th>Url</th>
+                                                    <th>Position</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>1</td>
+                                                    
+                                                    <td>
+                                                        Established Brand
+                                                    </td>
+                                                   
+                                                   <td>
+                                                        <select class="form-control">
+                                                            <option>Active</option>
+                                                            <option>In Active</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        www.raackdance.com/index.html
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span id="openForm"><a href="#"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href=""><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+                        <div id="popupForm" class="popup">
+                            <div class="popup-content col-lg-8">
+                                
+                                    <div class="card alert">
+                                        <div class="card-header">
+                                            <h4>Support & Benefits</h4>
+                                            <div class="card-header-right-icon">
+                                                <ul>
+                                                    <span><button onclick="closeForm()" style="background: none; border: none;padding: 0;cursor: pointer;"><i class="ti-close color-default"></i></button> </span>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="menu-upload-form">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Number</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type your Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Heading</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" placeholder="Type Your Heading">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" rows="3" placeholder="Type your Description"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button type="submit" class="btn btn-lg btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /# card -->
+                                
+                            </div>
+                        </div>
+                        <script>
+                            // Reusable function to close the popup
+                            function closeForm() {
+                                document.getElementById('popupForm').style.display = 'none';
+                            }
+                        
+                            // JavaScript to show/hide the popup form
+                            document.getElementById('openForm').addEventListener('click', function () {
+                                document.getElementById('popupForm').style.display = 'block';
+                            });
+                        </script>
+
+                    </div>
+                    
+                </div>
+                    
+                    <!-- /# row -->
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="footer">
