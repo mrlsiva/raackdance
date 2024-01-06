@@ -3080,7 +3080,7 @@ form .hs-richtext p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	Background-position: center;
-	position: realtive;
+	position: relative;
 	overflow: hidden;
 }
 
@@ -3092,13 +3092,13 @@ form .hs-richtext p {
 .core-team-bg:after {
 	content: "";
 	background-color: #ffffff;
-	width: 130%;
+	width: 202%;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	z-index: 99999;
-	height: 33%;
+	height: 45%;
 	transform: rotate(135deg);
 }
 
