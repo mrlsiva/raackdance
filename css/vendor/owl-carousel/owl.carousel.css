@@ -20,12 +20,26 @@
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
-	width: fit-content !important;
-	margin: 0 auto;
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
+
+#team-slider.owl-carousel .owl-wrapper {
+	width: fit-content !important;
+	margin: 0 auto;
+}
+.double-head {
+	height: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+/* .double-head .item {
+	max-width: 250px;
+} */
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
 	position: relative;
