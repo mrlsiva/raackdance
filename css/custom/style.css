@@ -367,9 +367,9 @@ iframe {
 	padding-bottom: 50px;
 }
 .com-ul-img {
-	top: -25px;
+  top: -80px;
   position: relative;
-  left: -57px;
+  left: 0px;
 }
 .client-logo-slider .course-ul-img-right {
   position: absolute;
@@ -1323,6 +1323,7 @@ background-repeat: no-repeat;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
 	padding: 10px 15px;
 }
+
 
 .client-testimonial.owl-theme .owl-nav [class*="owl-"] {
 	fill: #333;
@@ -2379,6 +2380,9 @@ form .hs-richtext p {
 	.res-text-center {
 		text-align: center;
 	}
+	.res-text-left {
+		text-align: left;	
+	}
 
 	.wrapper .circle,
 	.wrapper .circle img {
@@ -3203,3 +3207,10 @@ form .hs-richtext p {
                   color: #D3104D;
               }
 			  /* end table style*/
+
+			  .desc-left {
+				text-align: left;
+			 }
+			 .justify {
+				text-align: justify;
+			 }
