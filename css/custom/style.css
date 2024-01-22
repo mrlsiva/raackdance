@@ -1075,15 +1075,17 @@ background-repeat: no-repeat;
 	align-items: center;
 	position: relative;
 }
-.client-logo-slider .team-ul-img {
-	position: absolute;
-  left: 220px;  
-}
 
 .client-logo-slider .team-ul-img-right {
 	position: absolute;
   right: 220px;  
 }
+.client-logo-slider .team-ul-img {
+	position: absolute;
+  left: 220px;  
+}
+
+
 
 .testimonial-slider {
 	display: flex;
@@ -2763,7 +2765,7 @@ form .hs-richtext p {
 	.testimonial-slider .team-ul-img-right{
 		position: relative;
 		left:0;
-    width: 80px;
+    	width: 80px;
 	}
 	
 	.client-logo-slider,
