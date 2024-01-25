@@ -807,6 +807,7 @@ background-repeat: no-repeat;
 
 /*=============================== 6.COUNTER AREA START ============================*/
 .counter-box {
+	
 	padding: 80px 60px;
 	text-align: center;
 	border-radius: 66px;
@@ -1071,19 +1072,25 @@ background-repeat: no-repeat;
 }
 
 .client-logo-slider {
-	display: flex;
-	align-items: center;
 	position: relative;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+h2.mx-auto.text-dark.text-center.section-grp-margin-bottom {
+	margin:auto 12px !important;
 }
 
-.client-logo-slider .team-ul-img-right {
+/* .client-logo-slider .team-ul-img-right {
 	position: absolute;
   right: 220px;  
 }
 .client-logo-slider .team-ul-img {
 	position: absolute;
   left: 220px;  
-}
+} */
 
 
 
@@ -2643,7 +2650,15 @@ form .hs-richtext p {
 }
 
 @media only screen and (max-width: 767px) {
+	.counter-box {
+		margin: 0px 60px;
+		min-height: 220px;
+		display: flex;
+		place-content: center;
+		flex-direction: column;
+		align-items: center;
 
+	}
 	.pre-header .contact-items { 
 		justify-content:center !important; 
 		margin-bottom: 15px;
@@ -3069,9 +3084,6 @@ form .hs-richtext p {
 	}
 	.mar-left0 {
 		margin-left: 0;
-	}
-	footer .last-ul ul li {
-		text-align: center;
 	}
 }
 .animate__animated {
