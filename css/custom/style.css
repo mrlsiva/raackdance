@@ -1314,7 +1314,7 @@ h2.mx-auto.text-dark.text-center.section-grp-margin-bottom {
 	display: table;
 	width: auto;
 	position: absolute;
-	right: 0;
+	right: -30px;
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 10px 15px;
@@ -1326,7 +1326,7 @@ h2.mx-auto.text-dark.text-center.section-grp-margin-bottom {
 	display: table;
 	width: auto;
 	position: absolute;
-	left: 0;
+	left: -30PX;
 	top: 50%;
 	transform: translateY(-50%);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
@@ -2289,6 +2289,8 @@ form .hs-richtext p {
 
 /*===================== 23.MEDIA QUERIES START =====================*/
 
+
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	.res-tab-margin-bottom {
 		margin-bottom: 30px;
@@ -3232,3 +3234,30 @@ form .hs-richtext p {
 			 .justify {
 				text-align: justify;
 			 }
+
+
+			 @media only screen and (max-width: 1440px) {
+				#team-slider .owl-next {
+					background-color: #ffffff;
+					display: table;
+					width: auto;
+					position: absolute;
+					right: -20px;
+					top: 50%;
+					transform: translateY(-50%);
+					padding: 10px 15px;
+					box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
+				}
+				
+				#team-slider .owl-prev {
+					background-color: #ffffff;
+					display: table;
+					width: auto;
+					position: absolute;
+					left: -20px;
+					top: 50%;
+					transform: translateY(-50%);
+					box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .06);
+					padding: 10px 15px;
+				}
+			  }
