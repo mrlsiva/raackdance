@@ -24,7 +24,7 @@ class ContactUsController extends Controller
     public function intSendMail($input)
     { 
         //Save Data
-        // ContactUS::create($input);         
+        ContactUS::create($input);         
     
         $mailData = $input;
         $email_to = config('mail.from.address');         
@@ -41,6 +41,7 @@ class ContactUsController extends Controller
     {
         try {
             $validator = Validator::make($request->all(), [ 
+                'form_id' => 'required',
                 'fname' => 'required',
                 'email' => 'required|email',
                 'phone' => 'required|digits:10|numeric',
@@ -76,6 +77,7 @@ class ContactUsController extends Controller
     {
         try {
             $validator = Validator::make($request->all(), [ 
+                'form_id' => 'required',
                 'fname' => 'required',
                 'phone' => 'required|digits:10|numeric',
                 'dob' => 'required',
