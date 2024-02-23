@@ -23,18 +23,30 @@ class ContactUsController extends Controller
 
     public function intSendMail($input)
     { 
-        //Save Data
-        ContactUS::create($input);         
-    
-        $mailData = $input;
-        $email_to = config('mail.from.address');         
-
-        $result = Mail::to( $email_to )->send(new ContactMail($mailData));
-        if($result){
-            return true;
-        } else {
-            return false;
+        try {
+            //Save Data
+            ContactUS::create($input);         
+        
+            $mailData = $input;
+            $email_to = config('mail.from.address');         
+            
+            // Send Mail    
+            $result = Mail::to( $email_to )->send(new ContactMail($mailData));          
+            if($result){
+                return response()->json(['success' => true]);
+            } else {
+                return response()->json(['error' => 'Something went wrong. Please try again']);
+            }
         }
+        catch (\Throwable $exception) {
+            return $response['error'] = json_encode($exception->getMessage(), true);
+        } catch (\Illuminate\Database\QueryException $exception) {
+            return $response['error'] = json_encode($exception->getMessage(), true);
+        } catch (\PDOException $exception) {
+            return $response['error'] = json_encode($exception->getMessage(), true);
+        } catch (\Exception $exception) {
+            return $response['error'] = json_encode($exception->getMessage(), true);
+        }      
     }
 
     public function contactusMail(Request $request)
@@ -56,11 +68,14 @@ class ContactUsController extends Controller
             }
             $input = $request->all();  
             $input['server_details'] = json_encode(request()->server());
-           
-            if( $this->intSendMail($input) ){
-                 return response()->json(['success' => true, 'message' =>'Thank you for contact us. we will contact you shortly.']);
-            } 
-            return response()->json(['success' => false, 'message' =>'Something went wrong. Please try again.']);
+            
+            $mailSend = $this->intSendMail($input);
+            $mailSend = $mailSend->getData();          
+            if( isset($mailSend->success) && $mailSend->success == true ){
+                 return response()->json(['success' => true, 'message' => 'Thank you for contact us. we will contact you shortly.']);
+            } else {
+                return response()->json(['success' => false, 'message' => $mailSend->error]);
+            }            
         }
         catch (\Throwable $exception) {
             return redirect()->back()->withErrors( json_encode($exception->getMessage(), true) )->withInput($request->input());
@@ -90,12 +105,15 @@ class ContactUsController extends Controller
                 ]);
             }
             $input = $request->all();  
-            $input['server_details'] = json_encode(request()->server());
-           
-            if( $this->intSendMail($input) ){
-                 return response()->json(['success' => true, 'message' =>'Thank you for contact us. we will contact you shortly.']);
-            } 
-            return response()->json(['success' => false, 'message' =>'Something went wrong. Please try again.']);
+            $input['server_details'] = json_encode(request()->server());   
+
+            $mailSend = $this->intSendMail($input);
+            $mailSend = $mailSend->getData();          
+            if( isset($mailSend->success) && $mailSend->success == true ){
+                 return response()->json(['success' => true, 'message' => 'Thank you for contact us. we will contact you shortly.']);
+            } else {
+                return response()->json(['success' => false, 'message' => $mailSend->error]);
+            }
         }
         catch (\Throwable $exception) {
             return redirect()->back()->withErrors( json_encode($exception->getMessage(), true) )->withInput($request->input());

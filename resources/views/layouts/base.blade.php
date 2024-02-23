@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">	
+	
+	<title> Raack - Dance Schools in Chennai, Best Dance Studio in Chennai, Dance classes for Kids, Adults Chennai</title>
+	
 	<meta name="description" content="Raack, Dance Schools in Chennai, Best Dance Studio in Chennai, Dance Classes for kids Chennai, Dance Classes for Adults Chennai, Dance Classes in Thoraipakkam,Mylapore,Perungalathur,Velachery,Neelankarai,Ramapuram,Saidapet,Avadi,Mogappair,Tambaram,Kilpauk,Mugalivakkam,Keelkatalai,Sholinganallur,Pallikaranai,Kolathur,Guduvanchery.">
 
-	<meta name="keyword" content="Dance schools in Chennai, Dance classes in Chennai, Dance studios in Chennai, Dance academy in Chennai, Dance classes in Thoraipakkam, Dance classes in Mylapore, Dance classes in old perungalathur, Dance classes in Velachery, Dance classes in Neelankarai, Dance classes in Ramapuram, Dance classes in saidapet, Dance classes in Avadi, Dance classes in Mogappair, Dance classes in Tambaram, Dance classes in kilpauk, Dance classes in Mugalivakkam, Dance classes in Keelkatalai, Dance classes in sholinganallur, Dance classes in Pallikaranai, Dance classes in Kolathur, Dance classes in Guduvanchery, Dance classes for adults Chennai, Dance classes for kids Chennai.">
-
-	<!-- CSRF Token -->
-	<meta name="csrf-token" content="{{ csrf_token() }}">
-
-	<title>{{ config('app.name', 'Raack - Dance Schools in Chennai, Best Dance Studio in Chennai, Dance classes for Kids, Adults Chennai') }}</title>
+	<meta name="keyword" content="Dance schools in Chennai, Dance classes in Chennai, Dance studios in Chennai, Dance academy in Chennai, Dance classes in Thoraipakkam, Dance classes in Mylapore, Dance classes in old perungalathur, Dance classes in Velachery, Dance classes in Neelankarai, Dance classes in Ramapuram, Dance classes in saidapet, Dance classes in Avadi, Dance classes in Mogappair, Dance classes in Tambaram, Dance classes in kilpauk, Dance classes in Mugalivakkam, Dance classes in Keelkatalai, Dance classes in sholinganallur, Dance classes in Pallikaranai, Dance classes in Kolathur, Dance classes in Guduvanchery, Dance classes for adults Chennai, Dance classes for kids Chennai.">	
 
 	<!-- FAVICON LINK -->
 	<link rel="shortcut icon" href="{{asset('/resources/images-raack/logo.png')}}" type="image/x-icon">
