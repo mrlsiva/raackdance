@@ -4,7 +4,7 @@
 <section class="animate-scroll" data-animate="animate__animated animate__fadeInUp">
  <div class="container-fluid p-0">
 	 
-		 <img src="{{asset('/resources/images-raack/contact/header.png') }}"  class="img-fluid" alt="Dance classes in Thoraipakkam">
+		 <img src="{{asset('/resources/images-raack/contact/header.png') }}"  class="img-fluid w-100" alt="Dance classes in Thoraipakkam">
 	 
  </div>
 </section>

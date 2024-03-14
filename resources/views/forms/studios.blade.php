@@ -32,7 +32,10 @@ use App\Http\Controllers\DanceController;
 				$i = 0;
 			@endphp
 			<select name="location" id="location" class="form-input @error('location') is-invalid @enderror" required>
-				<option value="" disabled="disabled">Location</option>
+				@php 						
+					$optselected = isset($studioName) & $studioName == 'NULL' ? 'selected="true"' : '';
+				@endphp
+				<option value="" disabled="disabled" {{ $optselected }}>Location</option>
 				<hr>
 				@foreach($studiosList as $key => $studio)
 					@php 

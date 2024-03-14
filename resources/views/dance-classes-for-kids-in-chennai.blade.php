@@ -241,7 +241,7 @@
 	</div>
 	<div class="row rowsafari align-items-center">
 	   <div class="col-lg-6 col-sm-12 col-md-12 col-12 mx-auto">
-		  @include('forms.contactus')
+		  @include('forms.studios', array('studioName' => 'NULL'))
 	   </div>
 	</div>
  </div>
