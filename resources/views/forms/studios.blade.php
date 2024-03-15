@@ -25,29 +25,34 @@ use App\Http\Controllers\DanceController;
 	</div>   
 	             
 	<div class="form-field {{ $errors->has('location') ? 'has-error' : ''}}">
-		<div class="form-textarea-top-spacing">
+		<div class="form-textarea-top-spacing">			
 			@php 
 				$studiosList = DanceController::getStudiosList();
 				$studiosCount = count($studiosList);
 				$i = 0;
 			@endphp
-			<select name="location" id="location" class="form-input @error('location') is-invalid @enderror" required>
-				@php 						
-					$optselected = isset($studioName) & $studioName == 'NULL' ? 'selected="true"' : '';
-				@endphp
-				<option value="" disabled="disabled" {{ $optselected }}>Location</option>
-				<hr>
-				@foreach($studiosList as $key => $studio)
-					@php 
-						$i++; 
-						$optselected = isset($studioName) & $studioName == $key ? 'selected' : '';
+			
+			@if( isset($fieldType) && $fieldType == 'text' ) 
+				<input id="location" type="text" name="location" class="form-input @error('location') is-invalid @enderror"  placeholder="Location" value="{{ old('location') }}" maxlength="50" required autocomplete="off" />
+			@else
+				<select name="location" id="location" class="form-input @error('location') is-invalid @enderror" required>
+					@php 						
+						$optselected = isset($studioName) && $studioName == 'NULL' ? 'selected="true"' : '';
 					@endphp
-					<option value="{{ $key }}" {{ $optselected }}>{{ $studio }}</option>
-					@if( $studiosCount < $i ) 
-					 <hr/> 
-					@endif	
-				@endforeach				
-			</select>
+					<option value="" disabled="disabled" {{ $optselected }}>Location</option>
+					<hr>
+					@foreach($studiosList as $key => $studio)
+						@php 
+							$i++; 
+							$optselected = isset($studioName) && $studioName == $key ? 'selected' : '';
+						@endphp
+						<option value="{{ $key }}" {{ $optselected }}>{{ $studio }}</option>
+						@if( $studiosCount < $i ) 
+						 <hr/> 
+						@endif	
+					@endforeach				
+				</select>			
+			@endif
 		</div>
 	</div>
 	<div class="btn-wrapper" style="margin-top: 40px;">
