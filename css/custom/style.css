@@ -1654,7 +1654,13 @@ footer .last-ul ul li {
 	background-size: cover; 
 	width: 100%;
 } 
-
+.event-book-bg-img.choreo-camp {
+	background: url("../../images-raack/courses/header-chore.png?v1");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	width: 100%;
+} 
 .book-day-col {
 	font-size: 50px;
 	font-weight: 900;
